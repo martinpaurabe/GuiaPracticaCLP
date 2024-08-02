@@ -107,3 +107,13 @@ Temporary Items
 
 # Generated and compiled root folder
 build
+
+# Generated and compiled root folder for simulation propouse
+Simulador
+
+### Simulation files
+.mpf
+.wlf
+.qdb
+.qpg
+.qtl
