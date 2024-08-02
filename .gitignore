@@ -101,9 +101,20 @@ Temporary Items
 .history
 .ionide
 
+### Simulation files
+.mpf
+.wlf
+.qdb
+.qpg
+.qtl
+
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,linux,visualstudiocode,c++
 
 ### Local Settings ###
 
 # Generated and compiled root folder
 build
+
+# Generated and compiled root folder for simulation propouse
+Simulador
