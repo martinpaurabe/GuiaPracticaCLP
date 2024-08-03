@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1/modelsim_ase/win32aloem
+Emult2x1_1b
+Z0 w1722721501
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 12
+Z3 dC:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/multiplexor2x1/simulate
+Z4 8C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/multiplexor2x1/src/multiplexor2x1_1B.vhd
+Z5 FC:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/multiplexor2x1/src/multiplexor2x1_1B.vhd
+l0
+L4 1
+V?AKJ7f6mXgO94j8on4nUQ3
+!s100 WVd_0d<552Xoani>zmaok1
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1722721513
+!i10b 1
+Z8 !s108 1722721513.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/multiplexor2x1/src/multiplexor2x1_1B.vhd|
+Z10 !s107 C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/multiplexor2x1/src/multiplexor2x1_1B.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Amult2x1_1b_arch
+R1
+R2
+DEx4 work 10 mult2x1_1b 0 22 ?AKJ7f6mXgO94j8on4nUQ3
+!i122 12
+l20
+Z13 L16 7
+VTk4a@kXN[3Q<4Vg[H]d[E1
+!s100 OQ^dlE8cD>1GJkMed8cVM1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Emultiplexor2x1_1b
+Z14 w1722721651
+R1
+R2
+!i122 14
+R3
+R4
+R5
+l0
+L4 1
+V[2GL?mYg;j^3]=b2jAX2K2
+!s100 do]l<>_;k4dQ5iU1R;Po53
+R6
+32
+Z15 !s110 1722721667
+!i10b 1
+Z16 !s108 1722721667.000000
+R9
+R10
+!i113 1
+R11
+R12
+Amultiplexor2x1_1b_arch
+R1
+R2
+DEx4 work 17 multiplexor2x1_1b 0 22 [2GL?mYg;j^3]=b2jAX2K2
+!i122 14
+l20
+R13
+Vaj7U8RF0Ae<dmP9K9LFR22
+!s100 d8m@O9eMe3ZF^B=UNd61d1
+R6
+32
+R15
+!i10b 1
+R16
+R9
+R10
+!i113 1
+R11
+R12
+Emultiplexor2x1_1b_tb
+Z17 w1722721565
+R1
+R2
+!i122 15
+R3
+Z18 8C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/multiplexor2x1/src/multiplexor2x1_1b_tb.vhd
+Z19 FC:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/multiplexor2x1/src/multiplexor2x1_1b_tb.vhd
+l0
+L4 1
+VPkb5^f=[X45Ub>o1g_AjH1
+!s100 >mm;ik6AB5c;M`KCaMZ090
+R6
+32
+R15
+!i10b 1
+R16
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/multiplexor2x1/src/multiplexor2x1_1b_tb.vhd|
+Z21 !s107 C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/multiplexor2x1/src/multiplexor2x1_1b_tb.vhd|
+!i113 1
+R11
+R12
+Amultiplexor2x1_1b_tb_arch
+R1
+R2
+Z22 DEx4 work 20 multiplexor2x1_1b_tb 0 22 Pkb5^f=[X45Ub>o1g_AjH1
+!i122 15
+l24
+Z23 L8 32
+VQcOcJJY<TV3KHFkIRjRmE3
+!s100 @L2`37<ILaAVgO?Bj5jzH0
+R6
+32
+R15
+!i10b 1
+R16
+R20
+R21
+!i113 1
+R11
+R12

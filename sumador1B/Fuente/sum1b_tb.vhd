@@ -29,7 +29,7 @@ begin
    a_i_tb <= not a_i_tb after 10 ns;
    b_i_tb <= not b_i_tb after 20 ns;
    ci_i_tb <= not ci_i_tb after 40 ns;
-    --Device Under Test
+   --Device Under Test
    DUT: sum1b 
       port map(
          a_i => a_i_tb,
