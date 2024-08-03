@@ -1,13 +1,13 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity sum4b_tb is
+entity sumNb_tb is
 --No necesito ni entradas ni salidas porque las señales las voy a simular
-end sum4b_tb;
+end sumNb_tb;
 
-architecture sum4b_tb_arch of sum4b_tb is
+architecture sumNb_tb_arch of sumNb_tb is
 --Parte Declarativa
-   component sum4b is
+   component sumNb is
       --Parte Declarativa
       --Generic
       generic(
@@ -24,9 +24,9 @@ architecture sum4b_tb_arch of sum4b_tb is
    end component;
    
    --signal
-   constant N_tb: natural := 4;
+   constant N_tb: natural := 8;
    signal a_i_tb: std_logic_vector (N_tb-1 downto 0) := (others =>'0');
-   signal b_i_tb: std_logic_vector (N_tb-1 downto 0) := "0011";
+   signal b_i_tb: std_logic_vector (N_tb-1 downto 0) := "00111111";
    signal ci_i_tb: std_logic := '0';
    signal s_o_tb: std_logic_vector (N_tb-1 downto 0);
    signal co_o_tb: std_logic;
@@ -34,17 +34,15 @@ architecture sum4b_tb_arch of sum4b_tb is
 
 begin
    -- Test Vectors
-   a_i_tb <="0111" after 10 ns,
-            "1000" after 30 ns,
-            "1010" after 50 ns;
-   b_i_tb <="0000" after 20 ns,
-            "0111" after 40 ns,
-            "0101" after 60 ns;
-
+   a_i_tb <="01111111" after 10 ns,
+            "10000000" after 30 ns,
+            "10101010" after 50 ns;
+   b_i_tb <="00000000" after 20 ns,
+            "01111110" after 40 ns,
+            "01010000" after 60 ns;
    ci_i_tb <= '1' after 70 ns;
-
    --Device Under Test
-   DUT: sum4b 
+   DUT: sumNb 
       generic map(
          N=>N_tb
       )
