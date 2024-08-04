@@ -5,9 +5,6 @@ use IEEE.numeric_std.all;
 entity contBCD is
     --Parte Declarativa
     --Generic
-    generic(
-        N: natural:=4;
-    )
     --port    
     port(
         clk_i   : in std_logic;
