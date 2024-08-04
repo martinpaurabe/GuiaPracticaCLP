@@ -112,6 +112,9 @@ build
 # Generated and compiled root folder for simulation propouse
 Simulador
 
+# Generated and compiled root folder for simulation propouse
+simulate
+
 ### Simulation files
 .mpf
 .wlf
