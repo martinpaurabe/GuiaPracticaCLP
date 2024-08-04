@@ -19,9 +19,11 @@ architecture reg_arch of reg is
 
 begin
     --Descriptive seccion
-    process(clk_i)
+    process(clk_i,rst_i)
     begin
-        if rising_edge(clk_i) then
+        if(rst_i)
+            q_o <= (others => '0'); --another option we could sentence (N-1 downto 0 => '0')
+        elsif rising_edge(clk_i) then
             q_o <= (others => '0'); --another option we could sentence (N-1 downto 0 => '0')
         elsif   ena_i = '1' then
             q_o <= d_i;
