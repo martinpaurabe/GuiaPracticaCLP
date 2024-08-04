@@ -1,0 +1,17 @@
+C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/multiplexor2x1_Nb/src/multiplexor2x1_1B.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/multiplexor2x1_Nb/src/multiplexor2x1_1B.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity multiplexor2x1_1b
+-- Compiling architecture multiplexor2x1_1b_arch of multiplexor2x1_1b
+
+} {} {}} C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/multiplexor2x1_Nb/src/multiplexor2x1_Nb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/multiplexor2x1_Nb/src/multiplexor2x1_Nb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity multiplexor2x1_Nb
+-- Compiling architecture multiplexor2x1_Nb_arch of multiplexor2x1_Nb
+
+} {} {}}
