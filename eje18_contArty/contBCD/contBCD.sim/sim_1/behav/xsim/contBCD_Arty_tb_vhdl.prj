@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../contBCD.srcs/sources_1/imports/src/contBCD_Arty.vhd" \
+"../../../../contBCD.srcs/sources_1/imports/src/contBCD_com.vhd" \
+"../../../../contBCD.srcs/sources_1/imports/src/genEna.vhd" \
+"../../../../contBCD.srcs/sim_1/imports/src/contBCD_Arty_tb.vhd" \
+
+# Do not sort compile order
+nosort
