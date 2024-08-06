@@ -15,7 +15,10 @@ architecture contBCD_est_tb_arch of contBCD_est_tb is
             clk_i   : in std_logic;
             ena_i   : in std_logic;
             rst_i   : in std_logic;
-            q_o     : out std_logic_vector(N-1 downto 0)
+            q_o     : out std_logic_vector(N-1 downto 0);
+            ffd_xor_o: out std_logic_vector(N downto 0):= (others=>'0');
+            ffd_and_o: out std_logic_vector(N downto 0):= (others=>'0');
+            ffd_q_o:  out std_logic_vector(N-1 downto 0):= (others=>'0')
         );
     end component;
     
@@ -24,6 +27,9 @@ architecture contBCD_est_tb_arch of contBCD_est_tb is
     signal rst_i_tb: std_logic := '0';
     signal ena_i_tb: std_logic := '1';
     signal q_o_tb:   std_logic_vector(N_tb-1 downto 0);
+    signal ffd_xor_o_tb: std_logic_vector(N_tb downto 0):= (others=>'0');
+    signal ffd_and_o_tb: std_logic_vector(N_tb downto 0):= (others=>'0');
+    signal ffd_q_o_tb:  std_logic_vector(N_tb-1 downto 0):= (others=>'0');
 
 
 begin
@@ -39,7 +45,10 @@ begin
             clk_i => clk_i_tb,
             rst_i => rst_i_tb,
             ena_i => ena_i_tb,
-            q_o   => q_o_tb
-        );
+            q_o   => q_o_tb,
+            ffd_xor_o => ffd_xor_o_tb,
+            ffd_and_o => ffd_and_o_tb,
+            ffd_q_o  => ffd_q_o_tb
+        );         
 
 end; --my_neg_tb_arch 
