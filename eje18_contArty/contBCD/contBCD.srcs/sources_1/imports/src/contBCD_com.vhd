@@ -27,14 +27,18 @@ begin
 
     contBCD_com_inst : process( clk_i )
     begin
-        if rising_edge(clk_i) then
-            if (rst_i = '1' or unsigned(salReg) = 9) then
+        if rising_edge (clk_i) then
+            if (rst_i = '1') then
                 salReg <= (others=>'0');
             elsif (ena_i = '1') then
-                salReg <= std_logic_vector(unsigned(salReg)+1);
+                if(unsigned(salReg) = 9) then
+                    salReg <= (others=>'0');
+                else
+                    salReg <= std_logic_vector(unsigned(salReg)+1);
+                end if;
             else
             end if;
         end if;
-    end process; -- contBCD_com_inst
     s_o <= salReg;
+    end process; -- contBCD_com_inst
 end contBCD_com_arch ; -- arch

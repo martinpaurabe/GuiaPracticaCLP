@@ -1,3 +1,1 @@
 Breakpoint File Version 1.0
-34,true,"C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/eje18_contArty/contBCD/contBCD.srcs/sources_1/imports/src/contBCD_com.vhd"
-32,true,"C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/eje18_contArty/contBCD/contBCD.srcs/sources_1/imports/src/contBCD_com.vhd"

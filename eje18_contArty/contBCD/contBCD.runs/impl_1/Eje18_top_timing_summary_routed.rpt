@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Tue Aug  6 15:17:17 2024
+| Date         : Tue Aug  6 17:23:12 2024
 | Host         : COURIE running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file Eje18_top_timing_summary_routed.rpt -pb Eje18_top_timing_summary_routed.pb -rpx Eje18_top_timing_summary_routed.rpx -warn_on_violation
 | Design       : Eje18_top
@@ -225,16 +225,16 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.448ns  (logic 4.151ns (64.377%)  route 2.297ns (35.623%))
+  Data Path Delay:        6.314ns  (logic 4.013ns (63.561%)  route 2.301ns (36.439%))
   Logic Levels:           2  (FDRE=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X113Y105       FDRE                         0.000     0.000 r  DUT/inst_contBCD/salReg_reg[1]/C
-    SLICE_X113Y105       FDRE (Prop_fdre_C_Q)         0.419     0.419 r  DUT/inst_contBCD/salReg_reg[1]/Q
-                         net (fo=5, routed)           2.297     2.716    led_OBUF[1]
-    P14                  OBUF (Prop_obuf_I_O)         3.732     6.448 r  led_OBUF[1]_inst/O
-                         net (fo=0)                   0.000     6.448    led[1]
+    SLICE_X113Y104       FDRE                         0.000     0.000 r  DUT/inst_contBCD/salReg_reg[1]/C
+    SLICE_X113Y104       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_contBCD/salReg_reg[1]/Q
+                         net (fo=4, routed)           2.301     2.757    led_OBUF[1]
+    P14                  OBUF (Prop_obuf_I_O)         3.557     6.314 r  led_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     6.314    led[1]
     P14                                                               r  led[1] (OUT)
   -------------------------------------------------------------------    -------------------
 
@@ -245,37 +245,17 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.302ns  (logic 3.986ns (63.250%)  route 2.316ns (36.750%))
+  Data Path Delay:        6.273ns  (logic 3.986ns (63.543%)  route 2.287ns (36.457%))
   Logic Levels:           2  (FDRE=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X113Y105       FDRE                         0.000     0.000 r  DUT/inst_contBCD/salReg_reg[0]/C
-    SLICE_X113Y105       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_contBCD/salReg_reg[0]/Q
-                         net (fo=6, routed)           2.316     2.772    led_OBUF[0]
-    R14                  OBUF (Prop_obuf_I_O)         3.530     6.302 r  led_OBUF[0]_inst/O
-                         net (fo=0)                   0.000     6.302    led[0]
+    SLICE_X113Y104       FDRE                         0.000     0.000 r  DUT/inst_contBCD/salReg_reg[0]/C
+    SLICE_X113Y104       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_contBCD/salReg_reg[0]/Q
+                         net (fo=5, routed)           2.287     2.743    led_OBUF[0]
+    R14                  OBUF (Prop_obuf_I_O)         3.530     6.273 r  led_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     6.273    led[0]
     R14                                                               r  led[0] (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 DUT/inst_contBCD/salReg_reg[3]/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            led[3]
-                            (output port)
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.008ns  (logic 4.172ns (69.435%)  route 1.836ns (30.565%))
-  Logic Levels:           2  (FDRE=1 OBUF=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X113Y105       FDRE                         0.000     0.000 r  DUT/inst_contBCD/salReg_reg[3]/C
-    SLICE_X113Y105       FDRE (Prop_fdre_C_Q)         0.419     0.419 r  DUT/inst_contBCD/salReg_reg[3]/Q
-                         net (fo=3, routed)           1.836     2.255    led_OBUF[3]
-    M14                  OBUF (Prop_obuf_I_O)         3.753     6.008 r  led_OBUF[3]_inst/O
-                         net (fo=0)                   0.000     6.008    led[3]
-    M14                                                               r  led[3] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -285,235 +265,253 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        5.718ns  (logic 4.028ns (70.446%)  route 1.690ns (29.554%))
+  Data Path Delay:        5.988ns  (logic 4.166ns (69.578%)  route 1.822ns (30.422%))
   Logic Levels:           2  (FDRE=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X113Y105       FDRE                         0.000     0.000 r  DUT/inst_contBCD/salReg_reg[2]/C
-    SLICE_X113Y105       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_contBCD/salReg_reg[2]/Q
-                         net (fo=4, routed)           1.690     2.146    led_OBUF[2]
-    N16                  OBUF (Prop_obuf_I_O)         3.572     5.718 r  led_OBUF[2]_inst/O
-                         net (fo=0)                   0.000     5.718    led[2]
+    SLICE_X113Y104       FDRE                         0.000     0.000 r  DUT/inst_contBCD/salReg_reg[2]/C
+    SLICE_X113Y104       FDRE (Prop_fdre_C_Q)         0.419     0.419 r  DUT/inst_contBCD/salReg_reg[2]/Q
+                         net (fo=4, routed)           1.822     2.241    led_OBUF[2]
+    N16                  OBUF (Prop_obuf_I_O)         3.747     5.988 r  led_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     5.988    led[2]
     N16                                                               r  led[2] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 DUT/inst_gen_ena/count_reg[1]/C
+  Source:                 DUT/inst_contBCD/salReg_reg[3]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            DUT/inst_gen_ena/q_o_reg/D
+  Destination:            led[3]
+                            (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        5.594ns  (logic 2.234ns (39.934%)  route 3.360ns (60.066%))
-  Logic Levels:           9  (CARRY4=5 FDRE=1 LUT5=1 LUT6=2)
+  Data Path Delay:        5.849ns  (logic 4.172ns (71.325%)  route 1.677ns (28.675%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X111Y119       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[1]/C
-    SLICE_X111Y119       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_gen_ena/count_reg[1]/Q
-                         net (fo=2, routed)           0.667     1.123    DUT/inst_gen_ena/count_reg[1]
-    SLICE_X112Y119       CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.637     1.760 r  DUT/inst_gen_ena/count_reg[0]_i_11/CO[3]
-                         net (fo=1, routed)           0.000     1.760    DUT/inst_gen_ena/count_reg[0]_i_11_n_0
-    SLICE_X112Y120       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     1.877 r  DUT/inst_gen_ena/count_reg[0]_i_9/CO[3]
-                         net (fo=1, routed)           0.000     1.877    DUT/inst_gen_ena/count_reg[0]_i_9_n_0
-    SLICE_X112Y121       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     1.994 r  DUT/inst_gen_ena/count_reg[0]_i_10/CO[3]
-                         net (fo=1, routed)           0.000     1.994    DUT/inst_gen_ena/count_reg[0]_i_10_n_0
-    SLICE_X112Y122       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.111 r  DUT/inst_gen_ena/count_reg[0]_i_12/CO[3]
-                         net (fo=1, routed)           0.000     2.111    DUT/inst_gen_ena/count_reg[0]_i_12_n_0
-    SLICE_X112Y123       CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.219     2.330 f  DUT/inst_gen_ena/count_reg[0]_i_15/O[0]
-                         net (fo=2, routed)           0.871     3.201    DUT/inst_gen_ena/p_0_in[17]
-    SLICE_X113Y123       LUT6 (Prop_lut6_I3_O)        0.295     3.496 r  DUT/inst_gen_ena/q_o_i_5/O
-                         net (fo=1, routed)           1.024     4.520    DUT/inst_gen_ena/q_o_i_5_n_0
-    SLICE_X113Y120       LUT6 (Prop_lut6_I1_O)        0.124     4.644 r  DUT/inst_gen_ena/q_o_i_3/O
-                         net (fo=1, routed)           0.798     5.442    DUT/inst_gen_ena/q_o_i_3_n_0
-    SLICE_X113Y121       LUT5 (Prop_lut5_I3_O)        0.152     5.594 r  DUT/inst_gen_ena/q_o_i_1/O
-                         net (fo=1, routed)           0.000     5.594    DUT/inst_gen_ena/q_o_i_1_n_0
-    SLICE_X113Y121       FDRE                                         r  DUT/inst_gen_ena/q_o_reg/D
+    SLICE_X113Y104       FDRE                         0.000     0.000 r  DUT/inst_contBCD/salReg_reg[3]/C
+    SLICE_X113Y104       FDRE (Prop_fdre_C_Q)         0.419     0.419 r  DUT/inst_contBCD/salReg_reg[3]/Q
+                         net (fo=3, routed)           1.677     2.096    led_OBUF[3]
+    M14                  OBUF (Prop_obuf_I_O)         3.753     5.849 r  led_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     5.849    led[3]
+    M14                                                               r  led[3] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 DUT/inst_gen_ena/count_reg[1]/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            DUT/inst_gen_ena/count_reg[20]/R
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        5.577ns  (logic 2.082ns (37.329%)  route 3.495ns (62.671%))
-  Logic Levels:           8  (CARRY4=5 FDRE=1 LUT6=2)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X111Y119       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[1]/C
-    SLICE_X111Y119       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_gen_ena/count_reg[1]/Q
-                         net (fo=2, routed)           0.667     1.123    DUT/inst_gen_ena/count_reg[1]
-    SLICE_X112Y119       CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.637     1.760 r  DUT/inst_gen_ena/count_reg[0]_i_11/CO[3]
-                         net (fo=1, routed)           0.000     1.760    DUT/inst_gen_ena/count_reg[0]_i_11_n_0
-    SLICE_X112Y120       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     1.877 r  DUT/inst_gen_ena/count_reg[0]_i_9/CO[3]
-                         net (fo=1, routed)           0.000     1.877    DUT/inst_gen_ena/count_reg[0]_i_9_n_0
-    SLICE_X112Y121       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     1.994 r  DUT/inst_gen_ena/count_reg[0]_i_10/CO[3]
-                         net (fo=1, routed)           0.000     1.994    DUT/inst_gen_ena/count_reg[0]_i_10_n_0
-    SLICE_X112Y122       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.111 r  DUT/inst_gen_ena/count_reg[0]_i_12/CO[3]
-                         net (fo=1, routed)           0.000     2.111    DUT/inst_gen_ena/count_reg[0]_i_12_n_0
-    SLICE_X112Y123       CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.219     2.330 f  DUT/inst_gen_ena/count_reg[0]_i_15/O[0]
-                         net (fo=2, routed)           0.869     3.199    DUT/inst_gen_ena/p_0_in[17]
-    SLICE_X113Y123       LUT6 (Prop_lut6_I3_O)        0.295     3.494 r  DUT/inst_gen_ena/count[0]_i_7/O
-                         net (fo=1, routed)           0.797     4.292    DUT/inst_gen_ena/count[0]_i_7_n_0
-    SLICE_X113Y122       LUT6 (Prop_lut6_I4_O)        0.124     4.416 r  DUT/inst_gen_ena/count[0]_i_1/O
-                         net (fo=27, routed)          1.162     5.577    DUT/inst_gen_ena/count[0]_i_1_n_0
-    SLICE_X111Y124       FDRE                                         r  DUT/inst_gen_ena/count_reg[20]/R
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 DUT/inst_gen_ena/count_reg[1]/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            DUT/inst_gen_ena/count_reg[21]/R
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        5.577ns  (logic 2.082ns (37.329%)  route 3.495ns (62.671%))
-  Logic Levels:           8  (CARRY4=5 FDRE=1 LUT6=2)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X111Y119       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[1]/C
-    SLICE_X111Y119       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_gen_ena/count_reg[1]/Q
-                         net (fo=2, routed)           0.667     1.123    DUT/inst_gen_ena/count_reg[1]
-    SLICE_X112Y119       CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.637     1.760 r  DUT/inst_gen_ena/count_reg[0]_i_11/CO[3]
-                         net (fo=1, routed)           0.000     1.760    DUT/inst_gen_ena/count_reg[0]_i_11_n_0
-    SLICE_X112Y120       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     1.877 r  DUT/inst_gen_ena/count_reg[0]_i_9/CO[3]
-                         net (fo=1, routed)           0.000     1.877    DUT/inst_gen_ena/count_reg[0]_i_9_n_0
-    SLICE_X112Y121       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     1.994 r  DUT/inst_gen_ena/count_reg[0]_i_10/CO[3]
-                         net (fo=1, routed)           0.000     1.994    DUT/inst_gen_ena/count_reg[0]_i_10_n_0
-    SLICE_X112Y122       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.111 r  DUT/inst_gen_ena/count_reg[0]_i_12/CO[3]
-                         net (fo=1, routed)           0.000     2.111    DUT/inst_gen_ena/count_reg[0]_i_12_n_0
-    SLICE_X112Y123       CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.219     2.330 f  DUT/inst_gen_ena/count_reg[0]_i_15/O[0]
-                         net (fo=2, routed)           0.869     3.199    DUT/inst_gen_ena/p_0_in[17]
-    SLICE_X113Y123       LUT6 (Prop_lut6_I3_O)        0.295     3.494 r  DUT/inst_gen_ena/count[0]_i_7/O
-                         net (fo=1, routed)           0.797     4.292    DUT/inst_gen_ena/count[0]_i_7_n_0
-    SLICE_X113Y122       LUT6 (Prop_lut6_I4_O)        0.124     4.416 r  DUT/inst_gen_ena/count[0]_i_1/O
-                         net (fo=27, routed)          1.162     5.577    DUT/inst_gen_ena/count[0]_i_1_n_0
-    SLICE_X111Y124       FDRE                                         r  DUT/inst_gen_ena/count_reg[21]/R
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 DUT/inst_gen_ena/count_reg[1]/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            DUT/inst_gen_ena/count_reg[22]/R
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        5.577ns  (logic 2.082ns (37.329%)  route 3.495ns (62.671%))
-  Logic Levels:           8  (CARRY4=5 FDRE=1 LUT6=2)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X111Y119       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[1]/C
-    SLICE_X111Y119       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_gen_ena/count_reg[1]/Q
-                         net (fo=2, routed)           0.667     1.123    DUT/inst_gen_ena/count_reg[1]
-    SLICE_X112Y119       CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.637     1.760 r  DUT/inst_gen_ena/count_reg[0]_i_11/CO[3]
-                         net (fo=1, routed)           0.000     1.760    DUT/inst_gen_ena/count_reg[0]_i_11_n_0
-    SLICE_X112Y120       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     1.877 r  DUT/inst_gen_ena/count_reg[0]_i_9/CO[3]
-                         net (fo=1, routed)           0.000     1.877    DUT/inst_gen_ena/count_reg[0]_i_9_n_0
-    SLICE_X112Y121       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     1.994 r  DUT/inst_gen_ena/count_reg[0]_i_10/CO[3]
-                         net (fo=1, routed)           0.000     1.994    DUT/inst_gen_ena/count_reg[0]_i_10_n_0
-    SLICE_X112Y122       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.111 r  DUT/inst_gen_ena/count_reg[0]_i_12/CO[3]
-                         net (fo=1, routed)           0.000     2.111    DUT/inst_gen_ena/count_reg[0]_i_12_n_0
-    SLICE_X112Y123       CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.219     2.330 f  DUT/inst_gen_ena/count_reg[0]_i_15/O[0]
-                         net (fo=2, routed)           0.869     3.199    DUT/inst_gen_ena/p_0_in[17]
-    SLICE_X113Y123       LUT6 (Prop_lut6_I3_O)        0.295     3.494 r  DUT/inst_gen_ena/count[0]_i_7/O
-                         net (fo=1, routed)           0.797     4.292    DUT/inst_gen_ena/count[0]_i_7_n_0
-    SLICE_X113Y122       LUT6 (Prop_lut6_I4_O)        0.124     4.416 r  DUT/inst_gen_ena/count[0]_i_1/O
-                         net (fo=27, routed)          1.162     5.577    DUT/inst_gen_ena/count[0]_i_1_n_0
-    SLICE_X111Y124       FDRE                                         r  DUT/inst_gen_ena/count_reg[22]/R
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 DUT/inst_gen_ena/count_reg[1]/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            DUT/inst_gen_ena/count_reg[23]/R
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        5.577ns  (logic 2.082ns (37.329%)  route 3.495ns (62.671%))
-  Logic Levels:           8  (CARRY4=5 FDRE=1 LUT6=2)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X111Y119       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[1]/C
-    SLICE_X111Y119       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_gen_ena/count_reg[1]/Q
-                         net (fo=2, routed)           0.667     1.123    DUT/inst_gen_ena/count_reg[1]
-    SLICE_X112Y119       CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.637     1.760 r  DUT/inst_gen_ena/count_reg[0]_i_11/CO[3]
-                         net (fo=1, routed)           0.000     1.760    DUT/inst_gen_ena/count_reg[0]_i_11_n_0
-    SLICE_X112Y120       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     1.877 r  DUT/inst_gen_ena/count_reg[0]_i_9/CO[3]
-                         net (fo=1, routed)           0.000     1.877    DUT/inst_gen_ena/count_reg[0]_i_9_n_0
-    SLICE_X112Y121       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     1.994 r  DUT/inst_gen_ena/count_reg[0]_i_10/CO[3]
-                         net (fo=1, routed)           0.000     1.994    DUT/inst_gen_ena/count_reg[0]_i_10_n_0
-    SLICE_X112Y122       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.111 r  DUT/inst_gen_ena/count_reg[0]_i_12/CO[3]
-                         net (fo=1, routed)           0.000     2.111    DUT/inst_gen_ena/count_reg[0]_i_12_n_0
-    SLICE_X112Y123       CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.219     2.330 f  DUT/inst_gen_ena/count_reg[0]_i_15/O[0]
-                         net (fo=2, routed)           0.869     3.199    DUT/inst_gen_ena/p_0_in[17]
-    SLICE_X113Y123       LUT6 (Prop_lut6_I3_O)        0.295     3.494 r  DUT/inst_gen_ena/count[0]_i_7/O
-                         net (fo=1, routed)           0.797     4.292    DUT/inst_gen_ena/count[0]_i_7_n_0
-    SLICE_X113Y122       LUT6 (Prop_lut6_I4_O)        0.124     4.416 r  DUT/inst_gen_ena/count[0]_i_1/O
-                         net (fo=27, routed)          1.162     5.577    DUT/inst_gen_ena/count[0]_i_1_n_0
-    SLICE_X111Y124       FDRE                                         r  DUT/inst_gen_ena/count_reg[23]/R
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 DUT/inst_gen_ena/count_reg[1]/C
+  Source:                 DUT/inst_gen_ena/count_reg[5]/C
                             (rising edge-triggered cell FDRE)
   Destination:            DUT/inst_gen_ena/count_reg[24]/R
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        5.392ns  (logic 2.082ns (38.614%)  route 3.310ns (61.386%))
+  Data Path Delay:        5.727ns  (logic 2.215ns (38.677%)  route 3.512ns (61.323%))
   Logic Levels:           8  (CARRY4=5 FDRE=1 LUT6=2)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X111Y119       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[1]/C
-    SLICE_X111Y119       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_gen_ena/count_reg[1]/Q
-                         net (fo=2, routed)           0.667     1.123    DUT/inst_gen_ena/count_reg[1]
-    SLICE_X112Y119       CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.637     1.760 r  DUT/inst_gen_ena/count_reg[0]_i_11/CO[3]
-                         net (fo=1, routed)           0.000     1.760    DUT/inst_gen_ena/count_reg[0]_i_11_n_0
-    SLICE_X112Y120       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     1.877 r  DUT/inst_gen_ena/count_reg[0]_i_9/CO[3]
-                         net (fo=1, routed)           0.000     1.877    DUT/inst_gen_ena/count_reg[0]_i_9_n_0
-    SLICE_X112Y121       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     1.994 r  DUT/inst_gen_ena/count_reg[0]_i_10/CO[3]
-                         net (fo=1, routed)           0.000     1.994    DUT/inst_gen_ena/count_reg[0]_i_10_n_0
-    SLICE_X112Y122       CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.111 r  DUT/inst_gen_ena/count_reg[0]_i_12/CO[3]
-                         net (fo=1, routed)           0.000     2.111    DUT/inst_gen_ena/count_reg[0]_i_12_n_0
-    SLICE_X112Y123       CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.219     2.330 f  DUT/inst_gen_ena/count_reg[0]_i_15/O[0]
-                         net (fo=2, routed)           0.869     3.199    DUT/inst_gen_ena/p_0_in[17]
-    SLICE_X113Y123       LUT6 (Prop_lut6_I3_O)        0.295     3.494 r  DUT/inst_gen_ena/count[0]_i_7/O
-                         net (fo=1, routed)           0.797     4.292    DUT/inst_gen_ena/count[0]_i_7_n_0
-    SLICE_X113Y122       LUT6 (Prop_lut6_I4_O)        0.124     4.416 r  DUT/inst_gen_ena/count[0]_i_1/O
-                         net (fo=27, routed)          0.976     5.392    DUT/inst_gen_ena/count[0]_i_1_n_0
-    SLICE_X111Y125       FDRE                                         r  DUT/inst_gen_ena/count_reg[24]/R
+    SLICE_X111Y118       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[5]/C
+    SLICE_X111Y118       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_gen_ena/count_reg[5]/Q
+                         net (fo=2, routed)           0.616     1.072    DUT/inst_gen_ena/count_reg[5]
+    SLICE_X110Y118       CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.728 r  DUT/inst_gen_ena/count_reg[0]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     1.728    DUT/inst_gen_ena/count_reg[0]_i_9_n_0
+    SLICE_X110Y119       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.842 r  DUT/inst_gen_ena/count_reg[0]_i_10/CO[3]
+                         net (fo=1, routed)           0.000     1.842    DUT/inst_gen_ena/count_reg[0]_i_10_n_0
+    SLICE_X110Y120       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.956 r  DUT/inst_gen_ena/count_reg[0]_i_12/CO[3]
+                         net (fo=1, routed)           0.000     1.956    DUT/inst_gen_ena/count_reg[0]_i_12_n_0
+    SLICE_X110Y121       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     2.070 r  DUT/inst_gen_ena/count_reg[0]_i_15/CO[3]
+                         net (fo=1, routed)           0.000     2.070    DUT/inst_gen_ena/count_reg[0]_i_15_n_0
+    SLICE_X110Y122       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     2.404 r  DUT/inst_gen_ena/count_reg[0]_i_14/O[1]
+                         net (fo=2, routed)           1.008     3.413    DUT/inst_gen_ena/p_0_in[22]
+    SLICE_X112Y121       LUT6 (Prop_lut6_I4_O)        0.303     3.716 r  DUT/inst_gen_ena/count[0]_i_7/O
+                         net (fo=1, routed)           0.935     4.650    DUT/inst_gen_ena/count[0]_i_7_n_0
+    SLICE_X112Y119       LUT6 (Prop_lut6_I4_O)        0.124     4.774 r  DUT/inst_gen_ena/count[0]_i_1/O
+                         net (fo=27, routed)          0.953     5.727    DUT/inst_gen_ena/count[0]_i_1_n_0
+    SLICE_X111Y123       FDRE                                         r  DUT/inst_gen_ena/count_reg[24]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 DUT/inst_gen_ena/count_reg[5]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            DUT/inst_gen_ena/count_reg[25]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.727ns  (logic 2.215ns (38.677%)  route 3.512ns (61.323%))
+  Logic Levels:           8  (CARRY4=5 FDRE=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y118       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[5]/C
+    SLICE_X111Y118       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_gen_ena/count_reg[5]/Q
+                         net (fo=2, routed)           0.616     1.072    DUT/inst_gen_ena/count_reg[5]
+    SLICE_X110Y118       CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.728 r  DUT/inst_gen_ena/count_reg[0]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     1.728    DUT/inst_gen_ena/count_reg[0]_i_9_n_0
+    SLICE_X110Y119       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.842 r  DUT/inst_gen_ena/count_reg[0]_i_10/CO[3]
+                         net (fo=1, routed)           0.000     1.842    DUT/inst_gen_ena/count_reg[0]_i_10_n_0
+    SLICE_X110Y120       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.956 r  DUT/inst_gen_ena/count_reg[0]_i_12/CO[3]
+                         net (fo=1, routed)           0.000     1.956    DUT/inst_gen_ena/count_reg[0]_i_12_n_0
+    SLICE_X110Y121       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     2.070 r  DUT/inst_gen_ena/count_reg[0]_i_15/CO[3]
+                         net (fo=1, routed)           0.000     2.070    DUT/inst_gen_ena/count_reg[0]_i_15_n_0
+    SLICE_X110Y122       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     2.404 r  DUT/inst_gen_ena/count_reg[0]_i_14/O[1]
+                         net (fo=2, routed)           1.008     3.413    DUT/inst_gen_ena/p_0_in[22]
+    SLICE_X112Y121       LUT6 (Prop_lut6_I4_O)        0.303     3.716 r  DUT/inst_gen_ena/count[0]_i_7/O
+                         net (fo=1, routed)           0.935     4.650    DUT/inst_gen_ena/count[0]_i_7_n_0
+    SLICE_X112Y119       LUT6 (Prop_lut6_I4_O)        0.124     4.774 r  DUT/inst_gen_ena/count[0]_i_1/O
+                         net (fo=27, routed)          0.953     5.727    DUT/inst_gen_ena/count[0]_i_1_n_0
+    SLICE_X111Y123       FDRE                                         r  DUT/inst_gen_ena/count_reg[25]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 DUT/inst_gen_ena/count_reg[5]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            DUT/inst_gen_ena/count_reg[26]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.727ns  (logic 2.215ns (38.677%)  route 3.512ns (61.323%))
+  Logic Levels:           8  (CARRY4=5 FDRE=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y118       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[5]/C
+    SLICE_X111Y118       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_gen_ena/count_reg[5]/Q
+                         net (fo=2, routed)           0.616     1.072    DUT/inst_gen_ena/count_reg[5]
+    SLICE_X110Y118       CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.728 r  DUT/inst_gen_ena/count_reg[0]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     1.728    DUT/inst_gen_ena/count_reg[0]_i_9_n_0
+    SLICE_X110Y119       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.842 r  DUT/inst_gen_ena/count_reg[0]_i_10/CO[3]
+                         net (fo=1, routed)           0.000     1.842    DUT/inst_gen_ena/count_reg[0]_i_10_n_0
+    SLICE_X110Y120       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.956 r  DUT/inst_gen_ena/count_reg[0]_i_12/CO[3]
+                         net (fo=1, routed)           0.000     1.956    DUT/inst_gen_ena/count_reg[0]_i_12_n_0
+    SLICE_X110Y121       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     2.070 r  DUT/inst_gen_ena/count_reg[0]_i_15/CO[3]
+                         net (fo=1, routed)           0.000     2.070    DUT/inst_gen_ena/count_reg[0]_i_15_n_0
+    SLICE_X110Y122       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     2.404 r  DUT/inst_gen_ena/count_reg[0]_i_14/O[1]
+                         net (fo=2, routed)           1.008     3.413    DUT/inst_gen_ena/p_0_in[22]
+    SLICE_X112Y121       LUT6 (Prop_lut6_I4_O)        0.303     3.716 r  DUT/inst_gen_ena/count[0]_i_7/O
+                         net (fo=1, routed)           0.935     4.650    DUT/inst_gen_ena/count[0]_i_7_n_0
+    SLICE_X112Y119       LUT6 (Prop_lut6_I4_O)        0.124     4.774 r  DUT/inst_gen_ena/count[0]_i_1/O
+                         net (fo=27, routed)          0.953     5.727    DUT/inst_gen_ena/count[0]_i_1_n_0
+    SLICE_X111Y123       FDRE                                         r  DUT/inst_gen_ena/count_reg[26]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 DUT/inst_gen_ena/count_reg[5]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            DUT/inst_gen_ena/count_reg[20]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.585ns  (logic 2.215ns (39.659%)  route 3.370ns (60.341%))
+  Logic Levels:           8  (CARRY4=5 FDRE=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y118       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[5]/C
+    SLICE_X111Y118       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_gen_ena/count_reg[5]/Q
+                         net (fo=2, routed)           0.616     1.072    DUT/inst_gen_ena/count_reg[5]
+    SLICE_X110Y118       CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.728 r  DUT/inst_gen_ena/count_reg[0]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     1.728    DUT/inst_gen_ena/count_reg[0]_i_9_n_0
+    SLICE_X110Y119       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.842 r  DUT/inst_gen_ena/count_reg[0]_i_10/CO[3]
+                         net (fo=1, routed)           0.000     1.842    DUT/inst_gen_ena/count_reg[0]_i_10_n_0
+    SLICE_X110Y120       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.956 r  DUT/inst_gen_ena/count_reg[0]_i_12/CO[3]
+                         net (fo=1, routed)           0.000     1.956    DUT/inst_gen_ena/count_reg[0]_i_12_n_0
+    SLICE_X110Y121       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     2.070 r  DUT/inst_gen_ena/count_reg[0]_i_15/CO[3]
+                         net (fo=1, routed)           0.000     2.070    DUT/inst_gen_ena/count_reg[0]_i_15_n_0
+    SLICE_X110Y122       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     2.404 r  DUT/inst_gen_ena/count_reg[0]_i_14/O[1]
+                         net (fo=2, routed)           1.008     3.413    DUT/inst_gen_ena/p_0_in[22]
+    SLICE_X112Y121       LUT6 (Prop_lut6_I4_O)        0.303     3.716 r  DUT/inst_gen_ena/count[0]_i_7/O
+                         net (fo=1, routed)           0.935     4.650    DUT/inst_gen_ena/count[0]_i_7_n_0
+    SLICE_X112Y119       LUT6 (Prop_lut6_I4_O)        0.124     4.774 r  DUT/inst_gen_ena/count[0]_i_1/O
+                         net (fo=27, routed)          0.811     5.585    DUT/inst_gen_ena/count[0]_i_1_n_0
+    SLICE_X111Y122       FDRE                                         r  DUT/inst_gen_ena/count_reg[20]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 DUT/inst_gen_ena/count_reg[5]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            DUT/inst_gen_ena/count_reg[21]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.585ns  (logic 2.215ns (39.659%)  route 3.370ns (60.341%))
+  Logic Levels:           8  (CARRY4=5 FDRE=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y118       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[5]/C
+    SLICE_X111Y118       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_gen_ena/count_reg[5]/Q
+                         net (fo=2, routed)           0.616     1.072    DUT/inst_gen_ena/count_reg[5]
+    SLICE_X110Y118       CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.728 r  DUT/inst_gen_ena/count_reg[0]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     1.728    DUT/inst_gen_ena/count_reg[0]_i_9_n_0
+    SLICE_X110Y119       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.842 r  DUT/inst_gen_ena/count_reg[0]_i_10/CO[3]
+                         net (fo=1, routed)           0.000     1.842    DUT/inst_gen_ena/count_reg[0]_i_10_n_0
+    SLICE_X110Y120       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.956 r  DUT/inst_gen_ena/count_reg[0]_i_12/CO[3]
+                         net (fo=1, routed)           0.000     1.956    DUT/inst_gen_ena/count_reg[0]_i_12_n_0
+    SLICE_X110Y121       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     2.070 r  DUT/inst_gen_ena/count_reg[0]_i_15/CO[3]
+                         net (fo=1, routed)           0.000     2.070    DUT/inst_gen_ena/count_reg[0]_i_15_n_0
+    SLICE_X110Y122       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     2.404 r  DUT/inst_gen_ena/count_reg[0]_i_14/O[1]
+                         net (fo=2, routed)           1.008     3.413    DUT/inst_gen_ena/p_0_in[22]
+    SLICE_X112Y121       LUT6 (Prop_lut6_I4_O)        0.303     3.716 r  DUT/inst_gen_ena/count[0]_i_7/O
+                         net (fo=1, routed)           0.935     4.650    DUT/inst_gen_ena/count[0]_i_7_n_0
+    SLICE_X112Y119       LUT6 (Prop_lut6_I4_O)        0.124     4.774 r  DUT/inst_gen_ena/count[0]_i_1/O
+                         net (fo=27, routed)          0.811     5.585    DUT/inst_gen_ena/count[0]_i_1_n_0
+    SLICE_X111Y122       FDRE                                         r  DUT/inst_gen_ena/count_reg[21]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 DUT/inst_gen_ena/count_reg[5]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            DUT/inst_gen_ena/count_reg[22]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.585ns  (logic 2.215ns (39.659%)  route 3.370ns (60.341%))
+  Logic Levels:           8  (CARRY4=5 FDRE=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y118       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[5]/C
+    SLICE_X111Y118       FDRE (Prop_fdre_C_Q)         0.456     0.456 r  DUT/inst_gen_ena/count_reg[5]/Q
+                         net (fo=2, routed)           0.616     1.072    DUT/inst_gen_ena/count_reg[5]
+    SLICE_X110Y118       CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.656     1.728 r  DUT/inst_gen_ena/count_reg[0]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     1.728    DUT/inst_gen_ena/count_reg[0]_i_9_n_0
+    SLICE_X110Y119       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.842 r  DUT/inst_gen_ena/count_reg[0]_i_10/CO[3]
+                         net (fo=1, routed)           0.000     1.842    DUT/inst_gen_ena/count_reg[0]_i_10_n_0
+    SLICE_X110Y120       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     1.956 r  DUT/inst_gen_ena/count_reg[0]_i_12/CO[3]
+                         net (fo=1, routed)           0.000     1.956    DUT/inst_gen_ena/count_reg[0]_i_12_n_0
+    SLICE_X110Y121       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     2.070 r  DUT/inst_gen_ena/count_reg[0]_i_15/CO[3]
+                         net (fo=1, routed)           0.000     2.070    DUT/inst_gen_ena/count_reg[0]_i_15_n_0
+    SLICE_X110Y122       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     2.404 r  DUT/inst_gen_ena/count_reg[0]_i_14/O[1]
+                         net (fo=2, routed)           1.008     3.413    DUT/inst_gen_ena/p_0_in[22]
+    SLICE_X112Y121       LUT6 (Prop_lut6_I4_O)        0.303     3.716 r  DUT/inst_gen_ena/count[0]_i_7/O
+                         net (fo=1, routed)           0.935     4.650    DUT/inst_gen_ena/count[0]_i_7_n_0
+    SLICE_X112Y119       LUT6 (Prop_lut6_I4_O)        0.124     4.774 r  DUT/inst_gen_ena/count[0]_i_1/O
+                         net (fo=27, routed)          0.811     5.585    DUT/inst_gen_ena/count[0]_i_1_n_0
+    SLICE_X111Y122       FDRE                                         r  DUT/inst_gen_ena/count_reg[22]/R
   -------------------------------------------------------------------    -------------------
 
 
@@ -523,42 +521,22 @@ Slack:                    inf
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 DUT/inst_gen_ena/q_o_reg/C
+  Source:                 DUT/inst_contBCD/salReg_reg[0]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            DUT/inst_gen_ena/q_o_reg/D
+  Destination:            DUT/inst_contBCD/salReg_reg[2]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.339ns  (logic 0.183ns (53.966%)  route 0.156ns (46.034%))
-  Logic Levels:           2  (FDRE=1 LUT5=1)
+  Data Path Delay:        0.365ns  (logic 0.183ns (50.196%)  route 0.182ns (49.804%))
+  Logic Levels:           2  (FDRE=1 LUT3=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X113Y121       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/q_o_reg/C
-    SLICE_X113Y121       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/q_o_reg/Q
-                         net (fo=2, routed)           0.156     0.297    DUT/inst_gen_ena/q_o
-    SLICE_X113Y121       LUT5 (Prop_lut5_I0_O)        0.042     0.339 r  DUT/inst_gen_ena/q_o_i_1/O
-                         net (fo=1, routed)           0.000     0.339    DUT/inst_gen_ena/q_o_i_1_n_0
-    SLICE_X113Y121       FDRE                                         r  DUT/inst_gen_ena/q_o_reg/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 DUT/inst_gen_ena/count_reg[11]/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            DUT/inst_gen_ena/count_reg[11]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
-  Logic Levels:           2  (CARRY4=1 FDRE=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X111Y121       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[11]/C
-    SLICE_X111Y121       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[11]/Q
-                         net (fo=2, routed)           0.120     0.261    DUT/inst_gen_ena/count_reg[11]
-    SLICE_X111Y121       CARRY4 (Prop_carry4_S[3]_O[3])
-                                                      0.108     0.369 r  DUT/inst_gen_ena/count_reg[8]_i_1/O[3]
-                         net (fo=1, routed)           0.000     0.369    DUT/inst_gen_ena/count_reg[8]_i_1_n_4
-    SLICE_X111Y121       FDRE                                         r  DUT/inst_gen_ena/count_reg[11]/D
+    SLICE_X113Y104       FDRE                         0.000     0.000 r  DUT/inst_contBCD/salReg_reg[0]/C
+    SLICE_X113Y104       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_contBCD/salReg_reg[0]/Q
+                         net (fo=5, routed)           0.182     0.323    DUT/inst_contBCD/Q[0]
+    SLICE_X113Y104       LUT3 (Prop_lut3_I2_O)        0.042     0.365 r  DUT/inst_contBCD/salReg[2]_i_1/O
+                         net (fo=1, routed)           0.000     0.365    DUT/inst_contBCD/salReg[2]_i_1_n_0
+    SLICE_X113Y104       FDRE                                         r  DUT/inst_contBCD/salReg_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -567,18 +545,76 @@ Slack:                    inf
   Destination:            DUT/inst_gen_ena/count_reg[15]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Data Path Delay:        0.367ns  (logic 0.249ns (67.838%)  route 0.118ns (32.162%))
   Logic Levels:           2  (CARRY4=1 FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X111Y122       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[15]/C
-    SLICE_X111Y122       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[15]/Q
-                         net (fo=2, routed)           0.120     0.261    DUT/inst_gen_ena/count_reg[15]
-    SLICE_X111Y122       CARRY4 (Prop_carry4_S[3]_O[3])
-                                                      0.108     0.369 r  DUT/inst_gen_ena/count_reg[12]_i_1/O[3]
-                         net (fo=1, routed)           0.000     0.369    DUT/inst_gen_ena/count_reg[12]_i_1_n_4
-    SLICE_X111Y122       FDRE                                         r  DUT/inst_gen_ena/count_reg[15]/D
+    SLICE_X111Y120       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[15]/C
+    SLICE_X111Y120       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[15]/Q
+                         net (fo=2, routed)           0.118     0.259    DUT/inst_gen_ena/count_reg[15]
+    SLICE_X111Y120       CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.367 r  DUT/inst_gen_ena/count_reg[12]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.367    DUT/inst_gen_ena/count_reg[12]_i_1_n_4
+    SLICE_X111Y120       FDRE                                         r  DUT/inst_gen_ena/count_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 DUT/inst_contBCD/salReg_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            DUT/inst_contBCD/salReg_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.368ns  (logic 0.186ns (50.602%)  route 0.182ns (49.398%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y104       FDRE                         0.000     0.000 r  DUT/inst_contBCD/salReg_reg[0]/C
+    SLICE_X113Y104       FDRE (Prop_fdre_C_Q)         0.141     0.141 f  DUT/inst_contBCD/salReg_reg[0]/Q
+                         net (fo=5, routed)           0.182     0.323    DUT/inst_contBCD/Q[0]
+    SLICE_X113Y104       LUT1 (Prop_lut1_I0_O)        0.045     0.368 r  DUT/inst_contBCD/salReg[0]_i_1/O
+                         net (fo=1, routed)           0.000     0.368    DUT/inst_contBCD/salReg[0]_i_1_n_0
+    SLICE_X113Y104       FDRE                                         r  DUT/inst_contBCD/salReg_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 DUT/inst_contBCD/salReg_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            DUT/inst_contBCD/salReg_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.368ns  (logic 0.184ns (50.058%)  route 0.184ns (49.942%))
+  Logic Levels:           2  (FDRE=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y104       FDRE                         0.000     0.000 r  DUT/inst_contBCD/salReg_reg[0]/C
+    SLICE_X113Y104       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_contBCD/salReg_reg[0]/Q
+                         net (fo=5, routed)           0.184     0.325    DUT/inst_contBCD/Q[0]
+    SLICE_X113Y104       LUT4 (Prop_lut4_I2_O)        0.043     0.368 r  DUT/inst_contBCD/salReg[3]_i_2/O
+                         net (fo=1, routed)           0.000     0.368    DUT/inst_contBCD/salReg[3]_i_2_n_0
+    SLICE_X113Y104       FDRE                                         r  DUT/inst_contBCD/salReg_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 DUT/inst_gen_ena/count_reg[11]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            DUT/inst_gen_ena/count_reg[11]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.368ns  (logic 0.249ns (67.650%)  route 0.119ns (32.350%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y119       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[11]/C
+    SLICE_X111Y119       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[11]/Q
+                         net (fo=2, routed)           0.119     0.260    DUT/inst_gen_ena/count_reg[11]
+    SLICE_X111Y119       CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.368 r  DUT/inst_gen_ena/count_reg[8]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.368    DUT/inst_gen_ena/count_reg[8]_i_1_n_4
+    SLICE_X111Y119       FDRE                                         r  DUT/inst_gen_ena/count_reg[11]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -587,18 +623,18 @@ Slack:                    inf
   Destination:            DUT/inst_gen_ena/count_reg[19]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Data Path Delay:        0.368ns  (logic 0.249ns (67.650%)  route 0.119ns (32.350%))
   Logic Levels:           2  (CARRY4=1 FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X111Y123       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[19]/C
-    SLICE_X111Y123       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[19]/Q
-                         net (fo=2, routed)           0.120     0.261    DUT/inst_gen_ena/count_reg[19]
-    SLICE_X111Y123       CARRY4 (Prop_carry4_S[3]_O[3])
-                                                      0.108     0.369 r  DUT/inst_gen_ena/count_reg[16]_i_1/O[3]
-                         net (fo=1, routed)           0.000     0.369    DUT/inst_gen_ena/count_reg[16]_i_1_n_4
-    SLICE_X111Y123       FDRE                                         r  DUT/inst_gen_ena/count_reg[19]/D
+    SLICE_X111Y121       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[19]/C
+    SLICE_X111Y121       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[19]/Q
+                         net (fo=2, routed)           0.119     0.260    DUT/inst_gen_ena/count_reg[19]
+    SLICE_X111Y121       CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.368 r  DUT/inst_gen_ena/count_reg[16]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.368    DUT/inst_gen_ena/count_reg[16]_i_1_n_4
+    SLICE_X111Y121       FDRE                                         r  DUT/inst_gen_ena/count_reg[19]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -607,18 +643,18 @@ Slack:                    inf
   Destination:            DUT/inst_gen_ena/count_reg[23]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Data Path Delay:        0.368ns  (logic 0.249ns (67.650%)  route 0.119ns (32.350%))
   Logic Levels:           2  (CARRY4=1 FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X111Y124       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[23]/C
-    SLICE_X111Y124       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[23]/Q
-                         net (fo=2, routed)           0.120     0.261    DUT/inst_gen_ena/count_reg[23]
-    SLICE_X111Y124       CARRY4 (Prop_carry4_S[3]_O[3])
-                                                      0.108     0.369 r  DUT/inst_gen_ena/count_reg[20]_i_1/O[3]
-                         net (fo=1, routed)           0.000     0.369    DUT/inst_gen_ena/count_reg[20]_i_1_n_4
-    SLICE_X111Y124       FDRE                                         r  DUT/inst_gen_ena/count_reg[23]/D
+    SLICE_X111Y122       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[23]/C
+    SLICE_X111Y122       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[23]/Q
+                         net (fo=2, routed)           0.119     0.260    DUT/inst_gen_ena/count_reg[23]
+    SLICE_X111Y122       CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.368 r  DUT/inst_gen_ena/count_reg[20]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.368    DUT/inst_gen_ena/count_reg[20]_i_1_n_4
+    SLICE_X111Y122       FDRE                                         r  DUT/inst_gen_ena/count_reg[23]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -627,18 +663,18 @@ Slack:                    inf
   Destination:            DUT/inst_gen_ena/count_reg[3]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Data Path Delay:        0.368ns  (logic 0.249ns (67.650%)  route 0.119ns (32.350%))
   Logic Levels:           2  (CARRY4=1 FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X111Y119       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[3]/C
-    SLICE_X111Y119       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[3]/Q
-                         net (fo=2, routed)           0.120     0.261    DUT/inst_gen_ena/count_reg[3]
-    SLICE_X111Y119       CARRY4 (Prop_carry4_S[3]_O[3])
-                                                      0.108     0.369 r  DUT/inst_gen_ena/count_reg[0]_i_2/O[3]
-                         net (fo=1, routed)           0.000     0.369    DUT/inst_gen_ena/count_reg[0]_i_2_n_4
-    SLICE_X111Y119       FDRE                                         r  DUT/inst_gen_ena/count_reg[3]/D
+    SLICE_X111Y117       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[3]/C
+    SLICE_X111Y117       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[3]/Q
+                         net (fo=2, routed)           0.119     0.260    DUT/inst_gen_ena/count_reg[3]
+    SLICE_X111Y117       CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.368 r  DUT/inst_gen_ena/count_reg[0]_i_2/O[3]
+                         net (fo=1, routed)           0.000     0.368    DUT/inst_gen_ena/count_reg[0]_i_2_n_4
+    SLICE_X111Y117       FDRE                                         r  DUT/inst_gen_ena/count_reg[3]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -647,78 +683,37 @@ Slack:                    inf
   Destination:            DUT/inst_gen_ena/count_reg[7]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Data Path Delay:        0.368ns  (logic 0.249ns (67.650%)  route 0.119ns (32.350%))
   Logic Levels:           2  (CARRY4=1 FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X111Y120       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[7]/C
-    SLICE_X111Y120       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[7]/Q
-                         net (fo=2, routed)           0.120     0.261    DUT/inst_gen_ena/count_reg[7]
-    SLICE_X111Y120       CARRY4 (Prop_carry4_S[3]_O[3])
-                                                      0.108     0.369 r  DUT/inst_gen_ena/count_reg[4]_i_1/O[3]
-                         net (fo=1, routed)           0.000     0.369    DUT/inst_gen_ena/count_reg[4]_i_1_n_4
-    SLICE_X111Y120       FDRE                                         r  DUT/inst_gen_ena/count_reg[7]/D
+    SLICE_X111Y118       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[7]/C
+    SLICE_X111Y118       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[7]/Q
+                         net (fo=2, routed)           0.119     0.260    DUT/inst_gen_ena/count_reg[7]
+    SLICE_X111Y118       CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.368 r  DUT/inst_gen_ena/count_reg[4]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.368    DUT/inst_gen_ena/count_reg[4]_i_1_n_4
+    SLICE_X111Y118       FDRE                                         r  DUT/inst_gen_ena/count_reg[7]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 DUT/inst_gen_ena/count_reg[12]/C
+  Source:                 DUT/inst_contBCD/salReg_reg[0]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            DUT/inst_gen_ena/count_reg[12]/D
+  Destination:            DUT/inst_contBCD/salReg_reg[1]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.373ns  (logic 0.256ns (68.576%)  route 0.117ns (31.424%))
-  Logic Levels:           2  (CARRY4=1 FDRE=1)
+  Data Path Delay:        0.370ns  (logic 0.186ns (50.328%)  route 0.184ns (49.672%))
+  Logic Levels:           2  (FDRE=1 LUT4=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X111Y122       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[12]/C
-    SLICE_X111Y122       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[12]/Q
-                         net (fo=2, routed)           0.117     0.258    DUT/inst_gen_ena/count_reg[12]
-    SLICE_X111Y122       CARRY4 (Prop_carry4_S[0]_O[0])
-                                                      0.115     0.373 r  DUT/inst_gen_ena/count_reg[12]_i_1/O[0]
-                         net (fo=1, routed)           0.000     0.373    DUT/inst_gen_ena/count_reg[12]_i_1_n_7
-    SLICE_X111Y122       FDRE                                         r  DUT/inst_gen_ena/count_reg[12]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 DUT/inst_gen_ena/count_reg[16]/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            DUT/inst_gen_ena/count_reg[16]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.373ns  (logic 0.256ns (68.576%)  route 0.117ns (31.424%))
-  Logic Levels:           2  (CARRY4=1 FDRE=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X111Y123       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[16]/C
-    SLICE_X111Y123       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[16]/Q
-                         net (fo=2, routed)           0.117     0.258    DUT/inst_gen_ena/count_reg[16]
-    SLICE_X111Y123       CARRY4 (Prop_carry4_S[0]_O[0])
-                                                      0.115     0.373 r  DUT/inst_gen_ena/count_reg[16]_i_1/O[0]
-                         net (fo=1, routed)           0.000     0.373    DUT/inst_gen_ena/count_reg[16]_i_1_n_7
-    SLICE_X111Y123       FDRE                                         r  DUT/inst_gen_ena/count_reg[16]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 DUT/inst_gen_ena/count_reg[20]/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            DUT/inst_gen_ena/count_reg[20]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.373ns  (logic 0.256ns (68.576%)  route 0.117ns (31.424%))
-  Logic Levels:           2  (CARRY4=1 FDRE=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X111Y124       FDRE                         0.000     0.000 r  DUT/inst_gen_ena/count_reg[20]/C
-    SLICE_X111Y124       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_gen_ena/count_reg[20]/Q
-                         net (fo=2, routed)           0.117     0.258    DUT/inst_gen_ena/count_reg[20]
-    SLICE_X111Y124       CARRY4 (Prop_carry4_S[0]_O[0])
-                                                      0.115     0.373 r  DUT/inst_gen_ena/count_reg[20]_i_1/O[0]
-                         net (fo=1, routed)           0.000     0.373    DUT/inst_gen_ena/count_reg[20]_i_1_n_7
-    SLICE_X111Y124       FDRE                                         r  DUT/inst_gen_ena/count_reg[20]/D
+    SLICE_X113Y104       FDRE                         0.000     0.000 r  DUT/inst_contBCD/salReg_reg[0]/C
+    SLICE_X113Y104       FDRE (Prop_fdre_C_Q)         0.141     0.141 r  DUT/inst_contBCD/salReg_reg[0]/Q
+                         net (fo=5, routed)           0.184     0.325    DUT/inst_contBCD/Q[0]
+    SLICE_X113Y104       LUT4 (Prop_lut4_I2_O)        0.045     0.370 r  DUT/inst_contBCD/salReg[1]_i_1/O
+                         net (fo=1, routed)           0.000     0.370    DUT/inst_contBCD/salReg[1]_i_1_n_0
+    SLICE_X113Y104       FDRE                                         r  DUT/inst_contBCD/salReg_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 

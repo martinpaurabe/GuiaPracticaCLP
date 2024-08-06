@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Tue Aug  6 15:17:17 2024
+| Date             : Tue Aug  6 17:23:12 2024
 | Host             : COURIE running 64-bit major release  (build 9200)
 | Command          : report_power -file Eje18_top_power_routed.rpt -pb Eje18_top_power_summary_routed.pb -rpx Eje18_top_power_routed.rpx
 | Design           : Eje18_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.350        |
+| Total On-Chip Power (W)  | 0.343        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.244        |
+| Dynamic (W)              | 0.237        |
 | Device Static (W)        | 0.106        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 81.0         |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.089 |       68 |       --- |             --- |
-|   LUT as Logic |     0.045 |       16 |     53200 |            0.03 |
-|   CARRY4       |     0.029 |       14 |     13300 |            0.11 |
-|   Register     |     0.009 |       32 |    106400 |            0.03 |
+| Slice Logic    |     0.091 |       67 |       --- |             --- |
+|   LUT as Logic |     0.044 |       15 |     53200 |            0.03 |
+|   CARRY4       |     0.030 |       14 |     13300 |            0.11 |
+|   Register     |     0.011 |       32 |    106400 |            0.03 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.147 |       87 |       --- |             --- |
-| I/O            |     0.008 |        7 |       125 |            5.60 |
+| Signals        |     0.142 |       86 |       --- |             --- |
+| I/O            |     0.004 |        7 |       125 |            5.60 |
 | Static Power   |     0.106 |          |           |                 |
-| Total          |     0.350 |          |           |                 |
+| Total          |     0.343 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.252 |       0.244 |      0.008 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.245 |       0.237 |      0.008 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.011 |       0.000 |      0.011 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -145,10 +145,9 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| Eje18_top        |     0.244 |
-|   DUT            |     0.210 |
-|     inst_contBCD |     0.002 |
-|     inst_gen_ena |     0.208 |
+| Eje18_top        |     0.237 |
+|   DUT            |     0.215 |
+|     inst_gen_ena |     0.215 |
 +------------------+-----------+
 
 

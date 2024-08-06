@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Aug  6 15:16:07 2024
-# Process ID: 7900
+# Start of session at: Tue Aug  6 17:22:05 2024
+# Process ID: 14900
 # Current directory: C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/eje18_contArty/contBCD/contBCD.runs/impl_1
 # Command line: vivado.exe -log Eje18_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Eje18_top.tcl -notrace
 # Log file: C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/eje18_contArty/contBCD/contBCD.runs/impl_1/Eje18_top.vdi
@@ -17,8 +17,8 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :16856 MB
-# Swap memory       :3814 MB
-# Total Virtual     :20671 MB
-# Available Virtual :4182 MB
+# Swap memory       :2597 MB
+# Total Virtual     :19454 MB
+# Available Virtual :3955 MB
 #-----------------------------------------------------------
 source Eje18_top.tcl -notrace
