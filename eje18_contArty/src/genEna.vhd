@@ -18,7 +18,7 @@ begin
 	process(clk_i)
 		variable count: integer range 0 to N := 0;
 	begin
-		if rising_edge(clk_i) then
+		if (clk_i ='1') then
 			if rst_i = '1' then
 				count := 0;
 				q_o <= '0';
