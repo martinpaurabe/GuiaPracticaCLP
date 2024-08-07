@@ -44,7 +44,7 @@ component contBCD_Arty is
         N: natural := 4
     );
 	port(
-		clk_i: in std_logic; --clk de 100Mhz
+		clk_i: in std_logic; --clk de 125Mhz
 		rst_i: in std_logic;
 		ena_i: in std_logic;
 		s_o: out std_logic_vector(3 downto 0)
@@ -55,7 +55,7 @@ begin
 
 	DUT: contBCD_Arty
 		generic map(
-			N => 100000000
+			N => 125000000
 		)
 		port map(
 			clk_i => clk,

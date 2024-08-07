@@ -19,7 +19,7 @@ architecture contBCD_Arty_tb_arq of contBCD_Arty_tb is
 		);
 	end component;
 
-	constant N_tb: natural:=100;	
+	constant N_tb: natural:=125000000;	
 	signal clk_tb: std_logic := '0';
 	signal rst_tb: std_logic := '1';
 	signal ena_tb: std_logic := '1';

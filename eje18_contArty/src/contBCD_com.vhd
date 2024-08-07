@@ -31,7 +31,7 @@ begin
             if (rst_i = '1') then
                 salReg <= (others=>'0');
             elsif (ena_i = '1') then
-                if(unsigned(salReg) = 9) then
+                if(salReg = "1001") then
                     salReg <= (others=>'0');
                 else
                     salReg <= std_logic_vector(unsigned(salReg)+1);

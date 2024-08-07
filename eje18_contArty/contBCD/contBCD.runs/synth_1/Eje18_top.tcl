@@ -56,8 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -67,7 +65,7 @@ set_param synth.vivado.isSynthRun true
 set_property webtalk.parent_dir C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/eje18_contArty/contBCD/contBCD.cache/wt [current_project]
 set_property parent.project_path C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/eje18_contArty/contBCD/contBCD.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
-set_property target_language Verilog [current_project]
+set_property target_language VHDL [current_project]
 set_property board_part_repo_paths {C:/Users/mpaur/AppData/Roaming/Xilinx/Vivado/2024.1/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:arty-z7-20:part0:1.1 [current_project]
 set_property ip_output_repo c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/eje18_contArty/contBCD/contBCD.cache/ip [current_project]
