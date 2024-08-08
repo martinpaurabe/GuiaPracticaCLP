@@ -27,7 +27,7 @@ architecture contBCD_Arty_tb_arq of contBCD_Arty_tb is
 	
 begin
 
-	clk_tb <= not clk_tb after 5 ns; --clk de 100MHz
+	clk_tb <= not clk_tb after 4 ns; --clk de 125MHz
 	rst_tb <= '0' after 50 us,
 			  '1' after 400 us,
 			  '0' after 460 us;
