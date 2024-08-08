@@ -56,6 +56,9 @@ begin
 							'1' after 1950 ns,
 							'0' after 2050 ns;
 
+	LMX2594_addr_tb	<= "1010101" after 1000 ns;
+	LMX2594_data_tx_tb	<= "1010101010101010" after 1000 ns;
+
 	LMX2594_clk_in_tb 	<= not LMX2594_clk_in_tb after 4 ns; --clk de 125MHz
 
 	LMX2594_smux_tb <= LMX2594_sdat_tb;

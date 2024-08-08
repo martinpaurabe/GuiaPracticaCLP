@@ -141,7 +141,7 @@ LMX2594_inst: process(internaCLK)
                         end IF;
                     when 3 =>
                         LMX2594_data_rx <= LMX2594_data_rx_reg;
-                        LMX2594_sclk <= '1';
+                        LMX2594_sclk <= '0';
                         LMX2594_cc <= '1';
                         STT <= 0;
                     when others =>
