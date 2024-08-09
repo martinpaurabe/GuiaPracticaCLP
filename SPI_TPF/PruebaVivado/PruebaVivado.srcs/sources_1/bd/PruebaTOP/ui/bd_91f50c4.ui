@@ -1,0 +1,41 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-170,166",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_ck_io0 -pg 1 -lvl 4 -x 960 -y 350 -defaultsOSRD
+preplace port port-id_ck_io1 -pg 1 -lvl 4 -x 960 -y 370 -defaultsOSRD
+preplace port port-id_ck_io2 -pg 1 -lvl 4 -x 960 -y 390 -defaultsOSRD
+preplace port port-id_ck_io3 -pg 1 -lvl 0 -x 0 -y 390 -defaultsOSRD
+preplace port port-id_sys_clock -pg 1 -lvl 0 -x 0 -y 370 -defaultsOSRD
+preplace port port-id_reset_rtl -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace port port-id_LMX2594_ena_0 -pg 1 -lvl 0 -x 0 -y 250 -defaultsOSRD
+preplace port port-id_LMX2594_rst_0 -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port port-id_LMX2594_r_nw_0 -pg 1 -lvl 0 -x 0 -y 410 -defaultsOSRD
+preplace port port-id_ck_io4 -pg 1 -lvl 4 -x 960 -y 430 -defaultsOSRD
+preplace inst LMX2594_0 -pg 1 -lvl 3 -x 750 -y 390 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 290 -y 330 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 110 -y 470 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x 110 -y 570 -defaultsOSRD
+preplace netloc LMX2594_0_LMX2594_csb 1 3 1 N 350
+preplace netloc LMX2594_0_LMX2594_sclk 1 3 1 N 370
+preplace netloc LMX2594_0_LMX2594_sdat 1 3 1 N 390
+preplace netloc LMX2594_smux_0_1 1 0 3 20 260 N 260 390
+preplace netloc clk_wiz_0_clk_out1 1 2 1 380 320n
+preplace netloc sys_clock_1 1 0 2 NJ 370 190
+preplace netloc reset_rtl_1 1 0 2 NJ 310 190
+preplace netloc LMX2594_ena_0_1 1 0 3 NJ 250 N 250 400J
+preplace netloc LMX2594_rst_0_1 1 0 3 NJ 220 N 220 410J
+preplace netloc LMX2594_r_nw_0_1 1 0 3 NJ 410 N 410 NJ
+preplace netloc xlconstant_0_dout 1 1 2 NJ 470 380
+preplace netloc xlconstant_1_dout 1 1 2 NJ 570 410
+preplace netloc LMX2594_0_LMX2594_cc 1 3 1 N 430
+levelinfo -pg 1 0 110 290 750 960
+pagesize -pg 1 -db -bbox -sgen -170 -300 1110 630
+"
+}
+{
+   "da_board_cnt":"2"
+}

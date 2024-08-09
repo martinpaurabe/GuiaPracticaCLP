@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Aug  8 21:41:23 2024
+# Process ID: 11540
+# Current directory: C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/PruebaTOP_clk_wiz_0_0_synth_1
+# Command line: vivado.exe -log PruebaTOP_clk_wiz_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PruebaTOP_clk_wiz_0_0.tcl
+# Log file: C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/PruebaTOP_clk_wiz_0_0_synth_1/PruebaTOP_clk_wiz_0_0.vds
+# Journal file: C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/PruebaTOP_clk_wiz_0_0_synth_1\vivado.jou
+# Running On        :COURIE
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+# CPU Frequency     :2803 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :16856 MB
+# Swap memory       :2550 MB
+# Total Virtual     :19406 MB
+# Available Virtual :3467 MB
+#-----------------------------------------------------------
+source PruebaTOP_clk_wiz_0_0.tcl -notrace

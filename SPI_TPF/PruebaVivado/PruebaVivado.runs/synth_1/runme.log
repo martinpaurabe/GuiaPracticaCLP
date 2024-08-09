@@ -1,0 +1,422 @@
+
+*** Running vivado
+    with args -log PruebaTOP_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PruebaTOP_wrapper.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Aug  8 22:02:17 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source PruebaTOP_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 491.605 ; gain = 202.203
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/utils_1/imports/synth_1/PruebaTOP_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/utils_1/imports/synth_1/PruebaTOP_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top PruebaTOP_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11164
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1386.242 ; gain = 449.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PruebaTOP_wrapper' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/hdl/PruebaTOP_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'PruebaTOP' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/synth/PruebaTOP.v:13]
+INFO: [Synth 8-6157] synthesizing module 'PruebaTOP_LMX2594_0_0' [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/synth_1/.Xil/Vivado-16720-COURIE/realtime/PruebaTOP_LMX2594_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PruebaTOP_LMX2594_0_0' (0#1) [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/synth_1/.Xil/Vivado-16720-COURIE/realtime/PruebaTOP_LMX2594_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMX2594_data_rx' of module 'PruebaTOP_LMX2594_0_0' is unconnected for instance 'LMX2594_0' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/synth/PruebaTOP.v:56]
+WARNING: [Synth 8-7071] port 'LMX2594_cc' of module 'PruebaTOP_LMX2594_0_0' is unconnected for instance 'LMX2594_0' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/synth/PruebaTOP.v:56]
+WARNING: [Synth 8-7023] instance 'LMX2594_0' of module 'PruebaTOP_LMX2594_0_0' has 12 connections declared, but only 10 given [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/synth/PruebaTOP.v:56]
+INFO: [Synth 8-6157] synthesizing module 'PruebaTOP_clk_wiz_0_0' [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/synth_1/.Xil/Vivado-16720-COURIE/realtime/PruebaTOP_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PruebaTOP_clk_wiz_0_0' (0#1) [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/synth_1/.Xil/Vivado-16720-COURIE/realtime/PruebaTOP_clk_wiz_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'locked' of module 'PruebaTOP_clk_wiz_0_0' is unconnected for instance 'clk_wiz_0' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/synth/PruebaTOP.v:67]
+WARNING: [Synth 8-7023] instance 'clk_wiz_0' of module 'PruebaTOP_clk_wiz_0_0' has 4 connections declared, but only 3 given [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/synth/PruebaTOP.v:67]
+INFO: [Synth 8-6157] synthesizing module 'PruebaTOP_xlconstant_0_0' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_xlconstant_0_0/synth/PruebaTOP_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'PruebaTOP_xlconstant_0_0' (0#1) [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_xlconstant_0_0/synth/PruebaTOP_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'PruebaTOP_xlconstant_0_1' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_xlconstant_0_1/synth/PruebaTOP_xlconstant_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant__parameterized0' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant__parameterized0' (0#1) [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'PruebaTOP_xlconstant_0_1' (0#1) [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_xlconstant_0_1/synth/PruebaTOP_xlconstant_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'PruebaTOP' (0#1) [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/synth/PruebaTOP.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'PruebaTOP_wrapper' (0#1) [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/hdl/PruebaTOP_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1496.348 ; gain = 559.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1496.348 ; gain = 559.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1496.348 ; gain = 559.176
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1496.348 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_LMX2594_0_0/PruebaTOP_LMX2594_0_0/PruebaTOP_LMX2594_0_0_in_context.xdc] for cell 'PruebaTOP_i/LMX2594_0'
+Finished Parsing XDC File [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_LMX2594_0_0/PruebaTOP_LMX2594_0_0/PruebaTOP_LMX2594_0_0_in_context.xdc] for cell 'PruebaTOP_i/LMX2594_0'
+Parsing XDC File [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0_in_context.xdc] for cell 'PruebaTOP_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0_in_context.xdc] for cell 'PruebaTOP_i/clk_wiz_0'
+Parsing XDC File [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'ck_io4'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'ck_io5'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'ck_io6'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'ck_io7'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'ck_io8'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'ck_io9'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'ck_io10'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'ck_io11'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'ck_io12'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'ck_io13'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:103]
+Finished Parsing XDC File [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/PruebaTOP_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PruebaTOP_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PruebaTOP_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1508.035 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1508.035 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1508.035 ; gain = 570.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1508.035 ; gain = 570.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for PruebaTOP_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PruebaTOP_i/LMX2594_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PruebaTOP_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PruebaTOP_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PruebaTOP_i/xlconstant_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1508.035 ; gain = 570.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1508.035 ; gain = 570.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 1508.035 ; gain = 570.863
+---------------------------------------------------------------------------------
+
+*** Running vivado
+    with args -log PruebaTOP_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PruebaTOP_wrapper.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Aug  8 22:04:18 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source PruebaTOP_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 490.090 ; gain = 201.461
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/utils_1/imports/synth_1/PruebaTOP_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/utils_1/imports/synth_1/PruebaTOP_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top PruebaTOP_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10620
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1385.039 ; gain = 447.633
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PruebaTOP_wrapper' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/hdl/PruebaTOP_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'PruebaTOP' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/synth/PruebaTOP.v:13]
+INFO: [Synth 8-6157] synthesizing module 'PruebaTOP_LMX2594_0_0' [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/synth_1/.Xil/Vivado-18280-COURIE/realtime/PruebaTOP_LMX2594_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PruebaTOP_LMX2594_0_0' (0#1) [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/synth_1/.Xil/Vivado-18280-COURIE/realtime/PruebaTOP_LMX2594_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMX2594_data_rx' of module 'PruebaTOP_LMX2594_0_0' is unconnected for instance 'LMX2594_0' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/synth/PruebaTOP.v:60]
+WARNING: [Synth 8-7023] instance 'LMX2594_0' of module 'PruebaTOP_LMX2594_0_0' has 12 connections declared, but only 11 given [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/synth/PruebaTOP.v:60]
+INFO: [Synth 8-6157] synthesizing module 'PruebaTOP_clk_wiz_0_0' [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/synth_1/.Xil/Vivado-18280-COURIE/realtime/PruebaTOP_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PruebaTOP_clk_wiz_0_0' (0#1) [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/synth_1/.Xil/Vivado-18280-COURIE/realtime/PruebaTOP_clk_wiz_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'locked' of module 'PruebaTOP_clk_wiz_0_0' is unconnected for instance 'clk_wiz_0' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/synth/PruebaTOP.v:72]
+WARNING: [Synth 8-7023] instance 'clk_wiz_0' of module 'PruebaTOP_clk_wiz_0_0' has 4 connections declared, but only 3 given [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/synth/PruebaTOP.v:72]
+INFO: [Synth 8-6157] synthesizing module 'PruebaTOP_xlconstant_0_0' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_xlconstant_0_0/synth/PruebaTOP_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'PruebaTOP_xlconstant_0_0' (0#1) [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_xlconstant_0_0/synth/PruebaTOP_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'PruebaTOP_xlconstant_0_1' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_xlconstant_0_1/synth/PruebaTOP_xlconstant_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant__parameterized0' [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant__parameterized0' (0#1) [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'PruebaTOP_xlconstant_0_1' (0#1) [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_xlconstant_0_1/synth/PruebaTOP_xlconstant_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'PruebaTOP' (0#1) [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/synth/PruebaTOP.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'PruebaTOP_wrapper' (0#1) [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/hdl/PruebaTOP_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1494.953 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_LMX2594_0_0/PruebaTOP_LMX2594_0_0/PruebaTOP_LMX2594_0_0_in_context.xdc] for cell 'PruebaTOP_i/LMX2594_0'
+Finished Parsing XDC File [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_LMX2594_0_0/PruebaTOP_LMX2594_0_0/PruebaTOP_LMX2594_0_0_in_context.xdc] for cell 'PruebaTOP_i/LMX2594_0'
+Parsing XDC File [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0_in_context.xdc] for cell 'PruebaTOP_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0_in_context.xdc] for cell 'PruebaTOP_i/clk_wiz_0'
+Parsing XDC File [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'ck_io5'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'ck_io6'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'ck_io7'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'ck_io8'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'ck_io9'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'ck_io10'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'ck_io11'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'ck_io12'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'ck_io13'. [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc:103]
+Finished Parsing XDC File [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/PruebaTOP_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.srcs/constrs_1/imports/PruebaVivado/Arty-Z7-20-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PruebaTOP_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PruebaTOP_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1494.953 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1494.953 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.gen/sources_1/bd/PruebaTOP/ip/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for PruebaTOP_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PruebaTOP_i/LMX2594_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PruebaTOP_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PruebaTOP_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PruebaTOP_i/xlconstant_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:44 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:44 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:44 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:44 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:44 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:44 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------+----------+
+|      |BlackBox name         |Instances |
++------+----------------------+----------+
+|1     |PruebaTOP_LMX2594_0_0 |         1|
+|2     |PruebaTOP_clk_wiz_0_0 |         1|
++------+----------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |PruebaTOP_LMX2594_0 |     1|
+|2     |PruebaTOP_clk_wiz_0 |     1|
+|3     |IBUF                |     5|
+|4     |OBUF                |     4|
++------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:44 . Memory (MB): peak = 1494.953 ; gain = 557.547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:41 . Memory (MB): peak = 1494.953 ; gain = 557.547
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:44 . Memory (MB): peak = 1494.953 ; gain = 557.547
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1494.953 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1494.953 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: aba66232
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:52 . Memory (MB): peak = 1494.953 ; gain = 987.508
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1494.953 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mpaur/MESE/CLP/GuiaPracticaCLP/SPI_TPF/PruebaVivado/PruebaVivado.runs/synth_1/PruebaTOP_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file PruebaTOP_wrapper_utilization_synth.rpt -pb PruebaTOP_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  8 22:05:24 2024...

@@ -1,0 +1,12 @@
+verilog xil_defaultlib --include "../../../../PruebaVivado.gen/sources_1/bd/PruebaTOP/ipshared/3242" \
+"../../../bd/PruebaTOP/sim/PruebaTOP.v" \
+"../../../bd/PruebaTOP/ip/PruebaTOP_LMX2594_0_0/sim/PruebaTOP_LMX2594_0_0.v" \
+"../../../bd/PruebaTOP/ip/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/PruebaTOP/ip/PruebaTOP_clk_wiz_0_0/PruebaTOP_clk_wiz_0_0.v" \
+"../../../bd/PruebaTOP/ip/PruebaTOP_xlconstant_0_0/sim/PruebaTOP_xlconstant_0_0.v" \
+"../../../bd/PruebaTOP/ip/PruebaTOP_xlconstant_0_1/sim/PruebaTOP_xlconstant_0_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
