@@ -1,0 +1,12 @@
+vhdl xil_defaultlib  \
+"../../../bd/blq_top/ip/blq_top_axi_gpio_0_0/sim/blq_top_axi_gpio_0_0.vhd" \
+"../../../bd/blq_top/ip/blq_top_rst_ps7_0_100M_0/sim/blq_top_rst_ps7_0_100M_0.vhd" \
+"../../../bd/blq_top/ip/blq_top_axi_gpio_1_0/sim/blq_top_axi_gpio_1_0.vhd" \
+"../../../bd/blq_top/ip/blq_top_axi_gpio_2_0/sim/blq_top_axi_gpio_2_0.vhd" \
+"../../../bd/blq_top/ip/blq_top_axi_gpio_3_0/sim/blq_top_axi_gpio_3_0.vhd" \
+"../../../bd/blq_top/ip/blq_top_axi_gpio_4_0/sim/blq_top_axi_gpio_4_0.vhd" \
+"../../../bd/blq_top/ip/blq_top_LMX2594_0_0/sim/blq_top_LMX2594_0_0.vhd" \
+"../../../bd/blq_top/sim/blq_top.vhd" \
+
+# Do not sort compile order
+nosort

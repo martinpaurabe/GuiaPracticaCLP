@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\mpaur\.Xilinx\PruebaVitis\project_clp\project_vhdl.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

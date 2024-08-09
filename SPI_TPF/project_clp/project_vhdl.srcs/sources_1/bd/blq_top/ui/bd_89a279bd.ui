@@ -1,0 +1,66 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.606401",
+   "Default View_TopLeft":"604,-429",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"",
+   "PinnedPorts":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 2080 -y -440 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 2080 -y -420 -defaultsOSRD
+preplace port leds_4bits -pg 1 -lvl 5 -x 2080 -y -340 -defaultsOSRD
+preplace port btns_4bits -pg 1 -lvl 5 -x 2080 -y -200 -defaultsOSRD
+preplace port port-id_ck_io2 -pg 1 -lvl 5 -x 2080 -y 250 -defaultsOSRD
+preplace port port-id_ck_io4 -pg 1 -lvl 5 -x 2080 -y 120 -defaultsOSRD -right
+preplace port port-id_ck_io1 -pg 1 -lvl 5 -x 2080 -y 230 -defaultsOSRD
+preplace port port-id_ck_io0 -pg 1 -lvl 5 -x 2080 -y 210 -defaultsOSRD
+preplace port port-id_sys_clock -pg 1 -lvl 5 -x 2080 -y -160 -defaultsOSRD -right
+preplace port port-id_reset_rtl -pg 1 -lvl 5 -x 2080 -y -120 -defaultsOSRD -right
+preplace port port-id_LMX2594_rst_0 -pg 1 -lvl 5 -x 2080 -y 30 -defaultsOSRD -right
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 220 -y -390 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 1400 -y -350 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 820 -y -130 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 220 -y -140 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 3 -x 1400 -y -210 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 3 -x 1400 -y 170 -defaultsOSRD
+preplace inst axi_gpio_3 -pg 1 -lvl 3 -x 1400 -y 340 -defaultsOSRD
+preplace inst axi_gpio_4 -pg 1 -lvl 3 -x 1400 -y -30 -defaultsOSRD
+preplace inst LMX2594_0 -pg 1 -lvl 4 -x 1820 -y 200 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 4 -x 1820 -y -80 -defaultsOSRD
+preplace netloc LMX2594_0_LMX2594_cc 1 3 2 NJ 370 2010
+preplace netloc LMX2594_0_LMX2594_csb 1 4 1 2050 160n
+preplace netloc LMX2594_0_LMX2594_data_rx 1 3 2 NJ 330 2020
+preplace netloc LMX2594_0_LMX2594_sclk 1 4 1 2040 180n
+preplace netloc LMX2594_0_LMX2594_sdat 1 4 1 2030 200n
+preplace netloc axi_gpio_2_gpio2_io_o 1 3 1 1540 200n
+preplace netloc axi_gpio_2_gpio_io_o 1 3 1 1550 160n
+preplace netloc axi_gpio_4_gpio2_io_o 1 3 1 1560 0n
+preplace netloc axi_gpio_4_gpio_io_o 1 3 1 1570 -40n
+preplace netloc ck_io4_1 1 3 2 1610 80 2050J
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 0 -570 430
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 670 -330 1230
+preplace netloc sys_clock_1 1 3 2 1600J -160 N
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 10 -560 660 -340 1260
+preplace netloc clk_wiz_0_clk_out1 1 3 2 1620 0 2030
+preplace netloc btns_4bits_tri_i_3_1 1 3 2 1630 -150 2030
+preplace netloc LMX2594_rst_0_1 1 3 2 1630J 30 N
+preplace netloc axi_gpio_0_GPIO 1 3 2 N -350 2050
+preplace netloc axi_gpio_1_GPIO 1 3 2 1570 -200 N
+preplace netloc processing_system7_0_DDR 1 1 4 NJ -500 N -500 N -500 2050
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ -480 N -480 N -480 2030
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 440J -440n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 970J -370n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 1250 -230n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 1250 -130n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 970J -110n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 1240J -90n
+levelinfo -pg 1 -30 220 820 1400 1820 2080
+pagesize -pg 1 -db -bbox -sgen -370 -770 3220 560
+"
+}
+{
+   "da_axi4_cnt":"5",
+   "da_board_cnt":"17",
+   "da_ps7_cnt":"1"
+}

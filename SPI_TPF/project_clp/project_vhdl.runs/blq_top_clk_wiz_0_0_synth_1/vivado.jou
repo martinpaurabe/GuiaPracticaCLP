@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Aug  8 22:36:27 2024
+# Process ID: 8072
+# Current directory: C:/Users/mpaur/.Xilinx/PruebaVitis/project_clp/project_vhdl.runs/blq_top_clk_wiz_0_0_synth_1
+# Command line: vivado.exe -log blq_top_clk_wiz_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blq_top_clk_wiz_0_0.tcl
+# Log file: C:/Users/mpaur/.Xilinx/PruebaVitis/project_clp/project_vhdl.runs/blq_top_clk_wiz_0_0_synth_1/blq_top_clk_wiz_0_0.vds
+# Journal file: C:/Users/mpaur/.Xilinx/PruebaVitis/project_clp/project_vhdl.runs/blq_top_clk_wiz_0_0_synth_1\vivado.jou
+# Running On        :COURIE
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+# CPU Frequency     :2803 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :16856 MB
+# Swap memory       :6441 MB
+# Total Virtual     :23297 MB
+# Available Virtual :4418 MB
+#-----------------------------------------------------------
+source blq_top_clk_wiz_0_0.tcl -notrace
