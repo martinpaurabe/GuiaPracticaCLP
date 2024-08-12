@@ -1,0 +1,23 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Propósito}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Ámbito del sistema}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Definiciones, Acrónimos y Abreviaturas}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Referencias}{3}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Visión general del documento}{3}{subsection.1.5}%
+\contentsline {section}{\numberline {2}Descripción general del documento}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Perspectiva del producto}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Funciones del producto}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Características de los usuarios}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Restricciones}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Suposiciones y dependencias}{5}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Requisitos futuros}{5}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Requisitos específicos}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Interfaces externas}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Funciones}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Requisitos de rendimiento}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Restricciones de diseño}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Atributos del sistema}{7}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Otros requisitos}{7}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Apéndices}{8}{section.4}%
+\contentsfinish 

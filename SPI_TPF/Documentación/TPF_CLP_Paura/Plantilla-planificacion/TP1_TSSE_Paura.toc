@@ -1,0 +1,30 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Contenido}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Definiciones, Acrónimos y Abreviaturas}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Referencias}{6}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Asignación}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Responsable}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Contratista}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Alcance}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Objetivos}{6}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Precondiciones}{7}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Poscondiciones}{7}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Bases de Testeo}{7}{section.3}%
+\contentsline {section}{\numberline {4}Estrategia general del test}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Características de calidad}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Asignación de niveles de prueba a las características de calidad}{8}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Estrategia por nivel de prueba}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Selección de características de calidad y determinación de la importancia relativa por nivel de prueba}{8}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Hardware unit test}{8}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Hardware integration test}{9}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Model in the loop}{9}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}Software integration test}{9}{subsubsection.5.1.4}%
+\contentsline {subsubsection}{\numberline {5.1.5}HW/SW integration test}{9}{subsubsection.5.1.5}%
+\contentsline {subsubsection}{\numberline {5.1.6}System test}{9}{subsubsection.5.1.6}%
+\contentsline {subsubsection}{\numberline {5.1.7}Acceptance test}{9}{subsubsection.5.1.7}%
+\contentsline {subsubsection}{\numberline {5.1.8}Field test}{10}{subsubsection.5.1.8}%
+\contentsline {subsection}{\numberline {5.2}División del sistema en subsistemas}{10}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Determinación de la importancia realtiva de los subsistemas}{10}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Determinación de la importancia de test por combinaciones de subsistemas/características de calidad}{10}{subsection.5.4}%
+\contentsfinish 

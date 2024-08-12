@@ -1,0 +1,459 @@
+\documentclass[
+11pt, % The default document font size, options: 10pt, 11pt, 12pt
+%codirector, % Uncomment to add a codirector to the title page
+]{charter} 
+
+
+
+% El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
+\titulo{Desarrollo sobre FPGA de tecnología SAR para constelación satelital} 
+
+% Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
+\posgrado{Carrera de Especialización en Sistemas Embebidos} 
+%\posgrado{Carrera de Especialización en Internet de las Cosas} 
+%\posgrado{Carrera de Especialización en Inteligencia Artificial}
+%\posgrado{Maestría en Sistemas Embebidos} 
+%\posgrado{Maestría en Internet de las cosas}
+% IMPORTANTE: no omitir titulaciones ni tildación en los nombres, también se recomienda escribir los nombres completos (tal cual los tienen en su documento)
+% Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
+\autor{Ing. Martin Paura Bersan}
+
+% El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
+\director{Ing. Daniel Jacoby}
+\pertenenciaDirector{ITBA} 
+\codirector{} % para que aparezca en la portada se debe descomentar la opción codirector en los parámetros de documentclass
+\pertenenciaCoDirector{}
+
+% Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
+\cliente{BID. Erwin Beccari}
+\empresaCliente{Proyecto FOCUS/UNSAM}
+ 
+\fechaINICIO{20 de junio de 2024}		%Fecha de inicio de la cursada TSSE \fechaInicioName
+\fechaFINALPlan{15 de agosto de 2024} 	%Fecha de final de cursada de TSSE
+\fechaFINALTrabajo{15 de mayo de 2025}	%Fecha de defensa pública del trabajo final
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+%\usepackage[left=2.00cm, right=2.50cm, top=2.50cm, bottom=2.00cm]{geometry}
+%\usepackage{fancyhdr}
+%\fancyhead[RO,LE]{\thepage}
+%\fancyhead[LO]{\emph{\uppercase{\leftmark}}}
+%\fancyfoot{}
+%\renewcommand{\headrulewidth}{1.0pt}
+%\pagestyle{fancy}
+%\date{}
+\title{Desarrollo sobre FPGA de tecnología SAR para constelación satelital}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={IEEE-830},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.2 (Org mode 9.1.9)}, 
+ pdflang={English}}
+
+
+\begin{document}
+
+
+
+\maketitle
+
+\pagebreak 
+
+\section*{Historial de cambios}
+\label{sec:registro}
+
+
+\begin{table}[ht]
+\label{tab:registro}
+\centering
+\begin{tabularx}{\linewidth}{@{}|c|X|c|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
+A      & Creación del documento                  &\fechaInicioName \\ \hline
+B      & Primera entraga  & {15} de {julio} de 2024 \\ \hline
+%2      & Se completa hasta el punto 9 inclusive	& {19} de {marzo} de 2024 \\ \hline
+%3      & Se agregan puntos 11 y 12 inclusive	& {26} de {marzo} de 2024 \\ \hline
+%3.1      & Se completa hasta el punto 12 inclusive	& {31} de {marzo} de 2024 \\ \hline
+%4      & Se completa el plan	                                 & {2} de {abril} de 2024 \\ \hline
+%4.1    & Se completa el plan con correcciones                    & {15} de {abril} de 2024 \\ \hline
+
+% Si hay más correcciones pasada la versión 4 también se deben especificar acá
+
+\end{tabularx}
+\end{table}
+
+\pagebreak 
+
+
+\tableofcontents
+
+\newpage
+
+\section{Introducción}
+\label{sec:org60390fa}
+
+El presente documento detallará todos los aspectos relacionados con las especificaciones del Master Test Plan (plan maestro de pruebas) referentes al proyecto "\ttitle ".
+El objetivo del proyecto es generar un relevamiento topográfico de una zona de interés, procesando los pulsos de señales electromagnéticas reflejadas en la superficie. Según se detalla en [3].
+La estructura del presente documento sigue al ejemplo descrito en el Apéndice E del libro “Testing Embedded Software” de Bart Broekman y Edwin Notenboom.
+
+\subsection{Contenido}
+\label{sec:org434c3ef}
+
+Los contenidos del presente Master Test Plan son:
+\begin{enumerate}
+	 \item Asignaciones.
+	 \item Bases del test.
+	 \item Estrategia por nivel de prueba.
+\end{enumerate}
+
+
+\subsection{Definiciones, Acrónimos y Abreviaturas}
+\label{sec:orgb158e36}
+
+\begin{enumerate}
+\item HW	Hardware
+\item FW	Firmware
+\item SW 	Software
+\item FOCUS Emprendimiento y proyecto del sistema general.
+\item HDL 	\textit{Hardware Description Language} 
+\item N/A 	No aplica 
+\item RADAR	\textit{RAdio Detection And Ranging}
+\item SDR 	\textit{Software Defined Radio}
+\item SAR	\textit{Synthetic Aperture Radar}
+\item UART 	\textit{Universal Asynchronous Receiver Transmitter} 
+\item FPGA 	\textit{Field Programmable Gate Array} 
+\item AXI 	\textit{Advanced eXtensible Interface} 
+\item RAM 	\textit{Random Access Memory}
+\item HBC	\textit{High-Bandwidth Connectivity}
+\end{enumerate}
+
+
+%En esta subsección se definirán todos los términos, acrónimos y
+%abreviaturas utilizadas en la ERS.
+
+
+\subsection{Referencias}
+\label{sec:org62711e0}
+
+\begin{enumerate}
+\item [1]Especificaciones de Requerimientos de Software de la \degreename de \authorname.
+\item [2]Arquitectura de Software de la \degreename de \authorname.
+\item [3]Plan de Proyecto Final de la \degreename de \authorname.
+\item [4]\textit{InSAR Principles: Guidelines for SAR Interferometry Processing and Interpretation (ESA TM-19)}
+\item [5]https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar
+\item [6]https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/adalm-pluto.html
+\end{enumerate}
+
+
+
+\section{Asignación}
+\label{sec:orgc1c4017}
+
+
+\subsection{Responsable}
+\label{sec:orgaf51da6}
+
+El responsable de la elaboración de este documento es el ingeniero a cargo del desarrollo del proyecto, Martin Paura Bersan.
+
+
+\subsection{Contratista}
+\label{sec:orga40b0ee}
+
+La asignación es ejecutada bajo responsabilidad de Martin Paura Bersan, encargado de testing del desarrollo del proyecto.
+
+\subsection{Alcance}
+\label{sec:org5ca5790}
+
+El alcance del test de aceptación es el sistema "\ttitle" Revisión 1.0.
+
+
+\subsection{Objetivos}
+\label{sec:org0ae23fe}
+
+Los objetivos son:
+\begin{enumerate}
+\item Determinar si el sistema cumple con los requerimientos solicitados en [1].
+\item Reportar las diferencias entre lo observado y el comportamiento deseado.
+\item Generar y documentar herramientas de testing que puedan ser reutilizadas en el futuro. 
+\end{enumerate}
+
+\subsection{Precondiciones}
+\label{sec:org33cfcdb}
+
+Para poder iniciar las actividades se debe cumplir:
+\begin{enumerate}
+\item La documentación del sistema debe estar disponible antes del 1 de enero del 2025.
+\item Se debe disponer del sistema funcionando antes del 15 de enero.
+\item Los procesos de testeo deben finalizar el 15 de febrero.
+\end{enumerate}
+
+\subsection{Poscondiciones}
+\label{sec:org40573d1}
+
+TBD
+
+\section{Bases de Testeo}
+Los documentos bases para diseñar el testing son:
+\begin{enumerate}
+\item Especificaciones de Requerimientos de Software de la \degreename de \authorname.
+\item Arquitectura de Software de la \degreename de \authorname.
+\item Plan de Proyecto Final de la \degreename de \authorname.
+\item El libro "\textit{Testing Embedded Software}”.
+\end{enumerate}
+
+\section{Estrategia general del test}
+\label{sec:orgfd5391f}
+
+\subsection{Características de calidad}
+\label{sec:org307bb59}
+
+Se seleccionan sólo aquellas características de calidad que tienen impacto significativo en el producto.
+
+\begin{enumerate}
+\item Funcionalidad 50\%, el porcentaje de esta característica es alto debido a que el alcance del proyecto apunta a un desarrollo de un prototipo de evaluación de concepto. El cual debe realizar cálculos de precision (FFT y IFFT, transformaciones de sistemas de coordenadas) y comunicarse con otros dispositivos (Sistema SDR y computadora del sistema central) para poder responder correctamente a los requerimientos.
+\item Eficiencia 20\% Este es un punto importante porque dentro de los requerimientos del sistema se incluye la capacidad del mismo para procesar 2 imágenes en menos de 1 segundo.
+\item Portabilidad 20\% puesto que aun no se ha definido el hardware definitivo del producto final, es importante tener presente que la implementación final se puede realizar en otro modelo de FPGA.
+\item Confiabilidad 10\% Este es un tema importante a tener en cuenta en las próximas etapas del desarrollo por eso no tiene tanto peso pero hay que tenerla en cuenta(Recuperabilidad, Control de errores).
+\end{enumerate}
+
+
+\subsection{Asignación de niveles de prueba a las características de calidad}
+\label{sec:org94bc543}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{| l | c | c | c | c | c |}
+\hline
+\rowcolor[HTML]{C0C0C0}
+Nivel de Prueba 			&Funcionalidad 	& Eficiencia 	& Portabilidad 	& Confiabilidad \\ \hline
+Hardware unit test          &      			&     			& 				&   			\\ \hline
+HW/FW integration test      &     ++  		&     			& 				&   	+		\\ \hline
+Model in the loop            &      			&     			& 				&   			\\ \hline
+Software integration test   &     ++		&     	++		& 		+		&   	+		\\ \hline
+HW/SW integration test      &     ++		&     			& 				&   			\\ \hline
+System test 				&     ++			&     	+		& 				&   			\\ \hline
+Acceptance test 			&     ++		&     	+		& 				&   			\\ \hline
+Field test 					&       		&     	++		& 				&   	++		\\ \hline
+\end{tabular}
+%\caption{Asignación de niveles de prueba a las características de calidad}
+\end{center}
+\end{table}
+ 
+\begin{itemize}
+\item[]++: El testeo de la característica de calidad se realizará a fondo en este subsistema.
+\item[]+: El testeo de la característica de calidad será cubierto en este subsistema.
+\item[]Celda vacía: La característica de calidad no representa un problema en este subsistema.
+\end{itemize}
+
+
+\section{Estrategia por nivel de prueba}
+\label{sec:org49fe900}
+
+Por cada nivel de prueba indicado en el punto 4.2 Asignación de niveles de prueba a
+las características de calidad, se evalúa la estrategia con la que se lo abordará.
+
+%Todo aquello que restrinja las decisiones relativas al diseño de la
+%aplicación: Restricciones de otros estándares, limitaciones del
+%hardware, etc.
+
+
+\subsection{Selección de características de calidad y determinación de la importancia relativa por nivel de prueba}
+\label{sec:orgd0babc0}
+
+Se indican a continuación, para cada nivel de prueba, las características de
+calidad y la importancia relativa de cada una de ellas.
+
+\subsubsection{Hardware unit test}
+\label{sec:org31d2978}
+
+N/A
+
+\newpage 
+
+\subsubsection{Hardware integration test}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{| c | c |}
+\hline
+%\multicolumn{2}{ |c| }{Coches disponibles} \\ \hline
+\rowcolor[HTML]{C0C0C0}
+Característica de Calidad	& 	Importancia Relativa  \\ \hline
+Funcionalidad          		&   80					  \\ \hline
+Confiabilidad   			&   20					  \\ \hline
+\end{tabular}
+%\caption{Integración de hardware/firmware}
+\label{tab:HW-FWIntegr}
+\end{center}
+\end{table} 
+
+\subsubsection{Model in the loop}
+
+N/A
+
+\subsubsection{Software integration test}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{| c | c |}
+\hline
+%\multicolumn{2}{ |c| }{Coches disponibles} \\ \hline
+\rowcolor[HTML]{C0C0C0}
+Característica de Calidad	& 	Importancia Relativa  \\ \hline
+Funcionalidad          		&   50					  \\ \hline
+Eficiencia   				&   30					  \\ \hline
+Portabilidad   				&   10					  \\ \hline
+Confiabilidad   			&   10					  \\ \hline
+\end{tabular}
+%\caption{Integración de hardware/firmware}
+\label{tab:HW-FWIntegr}
+\end{center}
+\end{table} 
+
+\subsubsection{HW/SW integration test}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{| c | c |}
+\hline
+%\multicolumn{2}{ |c| }{Coches disponibles} \\ \hline
+\rowcolor[HTML]{C0C0C0}
+Característica de Calidad	& 	Importancia Relativa  \\ \hline
+Funcionalidad          		&   100					  \\ \hline
+\end{tabular}
+%\caption{HW/SW integration test}
+\label{tab:HW-SWIntegr}
+\end{center}
+\end{table} 
+
+
+\subsubsection{System test}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{| c | c |}
+\hline
+%\multicolumn{2}{ |c| }{Coches disponibles} \\ \hline
+\rowcolor[HTML]{C0C0C0}
+Característica de Calidad	& 	Importancia Relativa  \\ \hline
+Funcionalidad          		&   80					  \\ \hline
+Eficiencia   				&   20					  \\ \hline
+\end{tabular}
+%\caption{System test}
+\label{tab:System test}
+\end{center}
+\end{table} 
+
+\subsubsection{Acceptance test}
+
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{| c | c |}
+\hline
+%\multicolumn{2}{ |c| }{Coches disponibles} \\ \hline
+\rowcolor[HTML]{C0C0C0}
+Característica de Calidad	& 	Importancia Relativa  \\ \hline
+Funcionalidad          		&   80					  \\ \hline
+Eficiencia   				&   20					  \\ \hline
+\end{tabular}
+%\caption{System test}
+\label{tab:System test}
+\end{center}
+\end{table} 
+
+\newpage
+
+\subsubsection{Field test}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{| c | c |}
+\hline
+%\multicolumn{2}{ |c| }{Coches disponibles} \\ \hline
+\rowcolor[HTML]{C0C0C0}
+Característica de Calidad	& 	Importancia Relativa  \\ \hline
+Confiabilidad          		&   50					  \\ \hline
+Eficiencia   				&   50					  \\ \hline
+\end{tabular}
+%\caption{Integración de hardware/firmware}
+\label{tab:Field test}
+\end{center}
+\end{table} 
+
+ 
+
+\subsection{División del sistema en subsistemas}
+Basados en el funcionamiento deseado del sistema, se puede dividir en 5 partes
+
+\begin{enumerate}
+\item Parte A: Comunicación con SDR.
+\item Parte B: Procesamiento SAR FDBP.
+\item Parte C: Cálculo FFT e IFFT.
+\item Parte D: Comunicación con computadora sistema central.
+\end{enumerate}
+
+\subsection{Determinación de la importancia realtiva de los subsistemas}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{| l | c |}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+Subsistema & Importancia Relativa\\\hline
+Parte A: Comunicación con SDR. & 30\% \\ \hline
+Parte B: Procesamiento SAR FDBP.    & 30\% \\ \hline
+Parte C: Cálculo FFT e IFFT.  & 20\% \\ \hline
+Parte D: Comunicación con computadora sistema central. & 20\% \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+Total		  &100\% \\ \hline
+\end{tabular}
+%\caption{Integración de hardware/firmware}
+\label{tab:Importancia Subsistemas}
+\end{center}
+\end{table} 
+
+
+
+
+
+\subsection{Determinación de la importancia de test por combinaciones de subsistemas/características de calidad}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{| c | c | c | c | c | c |}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+Característica de Calidad & Importancia Relativa & Parte A & Parte B & Parte C & Parte D\\\hline
+Total		  &100\% &    30\% &    30\% &    20\% &    20\%  \\ \hline
+Funcionalidad & 50\% & ++ & ++ & ++ & +  \\ \hline
+Eficiencia    & 20\% &   & ++  & ++ &   \\ \hline
+Portabilidad  & 20\% &  & + & + &   \\ \hline
+Confiabilidad & 10\% &  &  &  & ++  \\ \hline
+\end{tabular}
+%\caption{Integración de hardware/firmware}
+%\label{tab:Field test}
+\end{center}
+\end{table} 
+
+\begin{itemize}
+\item[]++: El testeo de la característica de calidad se realizará a fondo en este subsistema.
+\item[]+: El testeo de la característica de calidad será cubierto en este subsistema.
+\item[]Celda vacía: La característica de calidad no representa un problema en este subsistema.
+\end{itemize}
+
+\end{document}
