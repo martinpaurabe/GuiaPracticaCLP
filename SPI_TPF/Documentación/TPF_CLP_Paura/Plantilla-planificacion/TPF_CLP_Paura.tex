@@ -200,10 +200,10 @@ Para ello se desarrollo un modulo SPI que recibe las señales de control, Direcc
 	\item sclk: Reloj de comunicación SPI (los datos se toman en el flanco ascendente).  
 	\item sdat: Activo alto, Datos transmitidos desde el módulo (FPGA) al sintetizador LMX2594.   
 	\item smux: Activo alto, Datos transmitidos desde el sintetizador LMX2594 al módulo (FPGA). 
-	\item r-nw: Read-Not Write, selector de modo escritura (low) o lectura (high).
+	\item r\_nw: Read-Not Write, selector de modo escritura (low) o lectura (high).
 	\item addr: Direccion del registro al que se desea ingresar datos o leer valor actual.
-	\item data-tx: Dato a ser cargados en el sintetizador.
-	\item data-rx: Datos a ser leídos por el módulo(FPGA).
+	\item data\_tx: Dato a ser cargados en el sintetizador.
+	\item data\_rx: Datos a ser leídos por el módulo(FPGA).
 	\item cc: Activo alto, Inidicador de final de secuencia de comunicación.
 \end{enumerate}
 
