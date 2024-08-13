@@ -5,9 +5,9 @@
 
 \typeout{\filename}
 \typeout{\fileversion}
-\typeout{Modificado por Martín Paura para Testing de Software en Sistemas Embebidos de FIUBA}
+\typeout{Modificado por Martín Paura para la materia Circuitos Lógicos Programables para la especialización Sistemas Embebidos de FIUBA}
 \typeout{\filedate}
-\typeout{Una materia para enseñar conceptos las metodologias de planificación e implementación del testeo de Software.}
+\typeout{Una materia para enseñar conceptos de programación de FPGA.}
 
 \RequirePackage{etoolbox}
 \RequirePackage{xparse}
@@ -57,9 +57,9 @@
 
 
 
-\def\@title{Master Test Plan} %TODO ver si se puede agregar el campo con el nombre del autor acá
-\def\@signature{Testing de Software en Sistemas Embebidos}
-\def\@TP{TP N°1 Master Test Plan}
+\def\@title{Implementación Módulo SPI} %TODO ver si se puede agregar el campo con el nombre del autor acá
+\def\@signature{Circuitos Lógicos Programables}
+\def\@TP{Trabajo Práctico Final}
 
 
 \AtBeginDocument{
@@ -203,6 +203,10 @@
     \vfill
     \centering
     {\Large \@TP \\}
+    \vfill
+    
+    \centering
+    {\Large \@signature \\}
 	\vspace{4cm}
 	
 	\flushleft

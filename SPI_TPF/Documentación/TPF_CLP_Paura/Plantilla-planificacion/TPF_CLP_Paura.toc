@@ -1,0 +1,11 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Contenido}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Definiciones, Acrónimos y Abreviaturas}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Referencias}{5}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Breve explicación de lo implementado}{5}{section.2}%
+\contentsline {section}{\numberline {3}Diagrama de flujo de la Maquina de Estado.}{7}{section.3}%
+\contentsline {section}{\numberline {4}Diagrama Bloque de los módulos desarrollados/utilizados}{7}{section.4}%
+\contentsline {section}{\numberline {5}Simulaciones}{8}{section.5}%
+\contentsline {section}{\numberline {6}Tabla de uso de los recursos de la FPGA}{10}{section.6}%
+\contentsfinish 
